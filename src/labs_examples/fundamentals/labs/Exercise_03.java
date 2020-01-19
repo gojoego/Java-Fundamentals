@@ -14,11 +14,16 @@ public class Exercise_03 {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
-
         // write code to print out "Check out my first program!" below
-       
-	 System.out.println("Joe Test");
+        System.out.println("Hello World!");
+        System.out.println("Check out my first program");
+
+	    int i = 10;
+	    int x = 12;
+	    int z = i + x;
+
+	    System.out.println(z);
+
     }
 
 }
