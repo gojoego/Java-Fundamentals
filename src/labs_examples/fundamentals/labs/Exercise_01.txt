@@ -22,3 +22,66 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+joes-mbp:CodingNomads joe$ mkdir Terminal_testing
+joes-mbp:CodingNomads joe$ cd Terminal_testing/
+joes-mbp:Terminal_testing joe$ touch file1.txt file2.txt file3.txt
+joes-mbp:Terminal_testing joe$ ls
+file1.txt	file2.txt	file3.txt
+joes-mbp:Terminal_testing joe$ pwd
+/Users/joe/Documents/CodingNomads/Terminal_testing
+joes-mbp:Terminal_testing joe$ ls -al
+total 0
+drwxr-xr-x  5 joe  staff  160 Jan 19 18:33 .
+drwxr-xr-x  7 joe  staff  224 Jan 19 18:32 ..
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file1.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file2.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file3.txt
+joes-mbp:Terminal_testing joe$ mkdir new_folder
+joes-mbp:Terminal_testing joe$ ls -al
+total 0
+drwxr-xr-x  6 joe  staff  192 Jan 19 18:33 .
+drwxr-xr-x  7 joe  staff  224 Jan 19 18:32 ..
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file1.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file2.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file3.txt
+drwxr-xr-x  2 joe  staff   64 Jan 19 18:33 new_folder
+joes-mbp:Terminal_testing joe$ cp file1.txt to /new_folder
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+joes-mbp:Terminal_testing joe$ cp file1.txt /new_folder
+cp: /new_folder: Permission denied
+joes-mbp:Terminal_testing joe$ cp file1.txt new_folder
+I am learning how to code in the Java language.
+joes-mbp:Terminal_testing joe$ ls -al
+total 0
+drwxr-xr-x  6 joe  staff  192 Jan 19 18:33 .
+drwxr-xr-x  7 joe  staff  224 Jan 19 18:32 ..
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file1.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file2.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file3.txt
+drwxr-xr-x  3 joe  staff   96 Jan 19 18:57 new_folder
+joes-mbp:Terminal_testing joe$ cd new_folder/
+joes-mbp:new_folder joe$ ls -al
+total 0
+drwxr-xr-x  3 joe  staff   96 Jan 19 18:57 .
+drwxr-xr-x  6 joe  staff  192 Jan 19 18:33 ..
+-rw-r--r--  1 joe  staff    0 Jan 19 18:57 file1.txt
+joes-mbp:new_folder joe$ cd ../
+joes-mbp:Terminal_testing joe$ mv file2.txt new_folder
+joes-mbp:Terminal_testing joe$ ls -al
+total 0
+drwxr-xr-x  5 joe  staff  160 Jan 19 18:58 .
+drwxr-xr-x  7 joe  staff  224 Jan 19 18:32 ..
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file1.txt
+-rw-r--r--  1 joe  staff    0 Jan 19 18:33 file3.txt
+drwxr-xr-x  4 joe  staff  128 Jan 19 18:58 new_folder
+joes-mbp:Terminal_testing joe$ mkdir director_to_delete
+joes-mbp:Terminal_testing joe$ rm director_to_delete/
+rm: director_to_delete/: is a directory
+joes-mbp:Terminal_testing joe$ rm -r director_to_delete/
+joes-mbp:Terminal_testing joe$ rm file3.txt
+joes-mbp:Terminal_testing joe$ vim file1.txt
+joes-mbp:Terminal_testing joe$ cat file1.txt
+I am learning how to code in the Java language.
+joes-mbp:Terminal_testing joe$ grep "Java" file1.txt
+I am learning how to code in the Java language.
