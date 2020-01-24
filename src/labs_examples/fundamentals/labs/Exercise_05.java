@@ -23,6 +23,12 @@ public class Exercise_05 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
+        // multiply value by 86400 (days to seconds)
+
+        double seconds = days * 86400;
+
+        System.out.println("There are "+seconds+" seconds in "+days+" days.");
+
         // write completed code here
 
     }

@@ -32,3 +32,731 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+joes-mbp:CodingNomads joe$ mkdir git_practice
+joes-mbp:CodingNomads joe$ cd git_practice/
+joes-mbp:git_practice joe$ git init
+Initialized empty Git repository in /Users/joe/Documents/CodingNomads/git_practice/.git/
+joes-mbp:git_practice joe$ echo "# git_practice" >> README.md
+joes-mbp:git_practice joe$ git add README.md
+joes-mbp:git_practice joe$ git commit -m "first commit for git_practice"
+[master (root-commit) a6c6e9d] first commit for git_practice
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+joes-mbp:git_practice joe$ git remote add git_joe https://github.com/gojoego/git_practice.git
+1. create a github account
+joes-mbp:git_practice joe$ git push -u git_joe master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gojoego/git_practice.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'git_joe'.
+joes-mbp:git_practice joe$ git status
+On branch master
+Your branch is up to date with 'git_joe/master'.
+
+nothing to commit, working tree clean
+joes-mbp:git_practice joe$ touch git_cheat_sheet.txt
+joes-mbp:git_practice joe$ vim git_cheat_sheet.txt
+joes-mbp:git_practice joe$ git add git_cheat_sheet.txt
+joes-mbp:git_practice joe$ git commit -m "beginner git user"
+[master 5ddba48] beginner git user
+ 1 file changed, 23 insertions(+)
+ create mode 100644 git_cheat_sheet.txt
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joes-mbp:git_practice joe$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 738 bytes | 738.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gojoego/git_practice.git
+   a6c6e9d..5ddba48  master -> master
+joes-mbp:git_practice joe$ vim pushing_projects_to_git.txt
+joes-mbp:git_practice joe$ git push
+Everything up-to-date
+joes-mbp:git_practice joe$ add pushing_projects_to_git.txt
+-bash: add: command not found
+joes-mbp:git_practice joe$ git add pushing_projects_to_git.txt
+joes-mbp:git_practice joe$ git commit -m "outline for pushing to git"
+[master 812b64f] outline for pushing to git
+ 1 file changed, 6 insertions(+)
+ create mode 100644 pushing_projects_to_git.txt
+joes-mbp:git_practice joe$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 473 bytes | 473.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gojoego/git_practice.git
+   5ddba48..812b64f  master -> master
+joes-mbp:git_practice joe$ cd ..
+joes-mbp:CodingNomads joe$ mkdir git_practice_2
+joes-mbp:CodingNomads joe$ ls -al
+total 16
+drwxr-xr-x  9 joe  staff   288 Jan 21 21:41 .
+drwx------+ 8 joe  staff   256 Jan 19 14:40 ..
+-rw-r--r--@ 1 joe  staff  6148 Jan 19 19:28 .DS_Store
+drwxr-xr-x  4 joe  staff   128 Jan 19 19:03 Terminal_testing
+drwxr-xr-x  6 joe  staff   192 Jan 21 21:26 git_practice
+drwxr-xr-x  2 joe  staff    64 Jan 21 21:41 git_practice_2
+drwxr-xr-x  5 joe  staff   160 Jan 19 15:59 labs
+drwxr-xr-x  2 joe  staff    64 Jan 17 02:46 projects
+drwxr-xr-x  2 joe  staff    64 Jan 17 02:46 resources
+joes-mbp:CodingNomads joe$ cd git_practice_2/
+joes-mbp:git_practice_2 joe$ git init
+Initialized empty Git repository in /Users/joe/Documents/CodingNomads/git_practice_2/.git/
+joes-mbp:git_practice_2 joe$ echo "# git_practice_2" >> README.md
+joes-mbp:git_practice_2 joe$ git add README.md
+joes-mbp:git_practice_2 joe$ git commit -m "first commit"
+[master (root-commit) 379726a] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+joes-mbp:git_practice_2 joe$ git remote add git_me https://github.com/gojoego/git_practice_2.git
+joes-mbp:git_practice_2 joe$ git remote -v
+git_me	https://github.com/gojoego/git_practice_2.git (fetch)
+git_me	https://github.com/gojoego/git_practice_2.git (push)
+joes-mbp:git_practice_2 joe$ git push -u git_me master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 232 bytes | 232.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/gojoego/git_practice_2.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'git_me'.
+joes-mbp:git_practice_2 joe$ git push
+Everything up-to-date
+joes-mbp:git_practice_2 joe$ cd ..
+joes-mbp:CodingNomads joe$ cd git_practice
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joes-mbp:git_practice joe$ git remote add https://github.com/gojoego/git_practice_2.git
+GIT-PUSH(1)                       Git Manual                       GIT-PUSH(1)
+
+NAME
+       git-push - Update remote refs along with associated objects
+
+SYNOPSIS
+       git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>]
+                  [--[no-]signed|--signed=(true|false|if-asked)]
+                  [--force-with-lease[=<refname>[:<expect>]]]
+                  [--no-verify] [<repository> [<refspec>...]]
+
+DESCRIPTION
+       Updates remote refs using local refs, while sending objects necessary
+       git-push - Update remote refs along with associated objects
+
+SYNOPSIS
+       git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>]
+                  [--[no-]signed|--signed=(true|false|if-asked)]
+                  [--force-with-lease[=<refname>[:<expect>]]]
+                  [--no-verify] [<repository> [<refspec>...]]
+
+DESCRIPTION
+       Updates remote refs using local refs, while sending objects necessary
+       to complete the given refs.
+
+       You can make interesting things happen to a repository every time you
+       push into it, by setting up hooks there. See documentation for git-
+       receive-pack(1).
+
+       When the command line does not specify where to push with the
+       <repository> argument, branch.*.remote configuration for the current
+       branch is consulted to determine where to push. If the configuration is
+       missing, it defaults to origin.
+
+       When the command line does not specify what to push with <refspec>...
+       arguments or --all, --mirror, --tags options, the command finds the
+       default <refspec> by consulting remote.*.push configuration, and if it
+       is not found, honors push.default configuration to decide what to push
+       (See git-config(1) for the meaning of push.default).
+
+       When neither the command-line nor the configuration specify what to
+       push, the default behavior is used, which corresponds to the simple
+       value for push.default: the current branch is pushed to the
+       corresponding upstream branch, but as a safety measure, the push is
+       aborted if the upstream branch does not have the same name as the local
+       one.
+
+OPTIONS
+       <repository>
+           The "remote" repository that is destination of a push operation.
+           This parameter can be either a URL (see the section GIT URLS below)
+           or the name of a remote (see the section REMOTES below).
+
+:
+GIT-PUSH(1)                       Git Manual                       GIT-PUSH(1)
+
+NAME
+       git-push - Update remote refs along with associated objects
+
+SYNOPSIS
+       git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>]
+                  [--[no-]signed|--signed=(true|false|if-asked)]
+                  [--force-with-lease[=<refname>[:<expect>]]]
+                  [--no-verify] [<repository> [<refspec>...]]
+
+DESCRIPTION
+       Updates remote refs using local refs, while sending objects necessary
+       to complete the given refs.
+
+       You can make interesting things happen to a repository every time you
+       push into it, by setting up hooks there. See documentation for git-
+       receive-pack(1).
+
+       When the command line does not specify where to push with the
+       <repository> argument, branch.*.remote configuration for the current
+       branch is consulted to determine where to push. If the configuration is
+       missing, it defaults to origin.
+
+       When the command line does not specify what to push with <refspec>...
+       arguments or --all, --mirror, --tags options, the command finds the
+       default <refspec> by consulting remote.*.push configuration, and if it
+       is not found, honors push.default configuration to decide what to push
+       (See git-config(1) for the meaning of push.default).
+
+       When neither the command-line nor the configuration specify what to
+       push, the default behavior is used, which corresponds to the simple
+       value for push.default: the current branch is pushed to the
+       corresponding upstream branch, but as a safety measure, the push is
+       aborted if the upstream branch does not have the same name as the local
+       one.
+
+OPTIONS
+       <repository>
+           The "remote" repository that is destination of a push operation.
+:
+GIT-PUSH(1)                       Git Manual                       GIT-PUSH(1)
+
+NAME
+       git-push - Update remote refs along with associated objects
+
+SYNOPSIS
+       git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>]
+                  [--[no-]signed|--signed=(true|false|if-asked)]
+                  [--force-with-lease[=<refname>[:<expect>]]]
+                  [--no-verify] [<repository> [<refspec>...]]
+
+DESCRIPTION
+       Updates remote refs using local refs, while sending objects necessary
+       to complete the given refs.
+
+       You can make interesting things happen to a repository every time you
+       push into it, by setting up hooks there. See documentation for git-
+       receive-pack(1).
+
+       When the command line does not specify where to push with the
+       <repository> argument, branch.*.remote configuration for the current
+       branch is consulted to determine where to push. If the configuration is
+       missing, it defaults to origin.
+
+       When the command line does not specify what to push with <refspec>...
+       arguments or --all, --mirror, --tags options, the command finds the
+       default <refspec> by consulting remote.*.push configuration, and if it
+       is not found, honors push.default configuration to decide what to push
+       (See git-config(1) for the meaning of push.default).
+
+       When neither the command-line nor the configuration specify what to
+       push, the default behavior is used, which corresponds to the simple
+       value for push.default: the current branch is pushed to the
+       corresponding upstream branch, but as a safety measure, the push is
+       aborted if the upstream branch does not have the same name as the local
+       one.
+
+OPTIONS
+       <repository>
+           The "remote" repository that is destination of a push operation.
+:
+GIT-PUSH(1)                       Git Manual                       GIT-PUSH(1)
+
+NAME
+       git-push - Update remote refs along with associated objects
+
+SYNOPSIS
+       git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>]
+                  [--[no-]signed|--signed=(true|false|if-asked)]
+                  [--force-with-lease[=<refname>[:<expect>]]]
+                  [--no-verify] [<repository> [<refspec>...]]
+
+DESCRIPTION
+       Updates remote refs using local refs, while sending objects necessary
+       to complete the given refs.
+
+       You can make interesting things happen to a repository every time you
+       push into it, by setting up hooks there. See documentation for git-
+       receive-pack(1).
+
+       When the command line does not specify where to push with the
+       <repository> argument, branch.*.remote configuration for the current
+       branch is consulted to determine where to push. If the configuration is
+       missing, it defaults to origin.
+
+       When the command line does not specify what to push with <refspec>...
+       arguments or --all, --mirror, --tags options, the command finds the
+       default <refspec> by consulting remote.*.push configuration, and if it
+       is not found, honors push.default configuration to decide what to push
+       (See git-config(1) for the meaning of push.default).
+
+       When neither the command-line nor the configuration specify what to
+       push, the default behavior is used, which corresponds to the simple
+       value for push.default: the current branch is pushed to the
+       corresponding upstream branch, but as a safety measure, the push is
+       aborted if the upstream branch does not have the same name as the local
+       one.
+
+OPTIONS
+       <repository>
+           The "remote" repository that is destination of a push operation.
+:
+GIT-PUSH(1)                       Git Manual                       GIT-PUSH(1)
+
+NAME
+       git-push - Update remote refs along with associated objects
+
+SYNOPSIS
+       git push [--all | --mirror | --tags] [--follow-tags] [--atomic] [-n | --dry-run] [--receive-pack=<git-receive-pack>]
+                  [--repo=<repository>] [-f | --force] [-d | --delete] [--prune] [-v | --verbose]
+                  [-u | --set-upstream] [-o <string> | --push-option=<string>]
+                  [--[no-]signed|--signed=(true|false|if-asked)]
+                  [--force-with-lease[=<refname>[:<expect>]]]
+                  [--no-verify] [<repository> [<refspec>...]]
+
+DESCRIPTION
+       Updates remote refs using local refs, while sending objects necessary
+       to complete the given refs.
+
+       You can make interesting things happen to a repository every time you
+       push into it, by setting up hooks there. See documentation for git-
+       receive-pack(1).
+
+       When the command line does not specify where to push with the
+       <repository> argument, branch.*.remote configuration for the current
+       branch is consulted to determine where to push. If the configuration is
+       missing, it defaults to origin.
+
+       When the command line does not specify what to push with <refspec>...
+       arguments or --all, --mirror, --tags options, the command finds the
+       default <refspec> by consulting remote.*.push configuration, and if it
+       is not found, honors push.default configuration to decide what to push
+       (See git-config(1) for the meaning of push.default).
+
+       When neither the command-line nor the configuration specify what to
+       push, the default behavior is used, which corresponds to the simple
+       value for push.default: the current branch is pushed to the
+       corresponding upstream branch, but as a safety measure, the push is
+       aborted if the upstream branch does not have the same name as the local
+       one.
+
+OPTIONS
+       <repository>
+           The "remote" repository that is destination of a push operation.
+           This parameter can be either a URL (see the section GIT URLS below)
+:
+       to complete the given refs.
+
+       You can make interesting things happen to a repository every time you
+       push into it, by setting up hooks there. See documentation for git-
+       receive-pack(1).
+
+       When the command line does not specify where to push with the
+       <repository> argument, branch.*.remote configuration for the current
+       branch is consulted to determine where to push. If the configuration is
+:...skipping...
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+joes-mbp:git_practice joe$ git remote add joe_gits_it https://github.com/gojoego/git_practice_2.git
+joes-mbp:git_practice joe$ git add /git_practice
+fatal: /git_practice: '/git_practice' is outside repository
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (fetch)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (push)
+joes-mbp:git_practice joe$ git push -u joe_gits_it master
+To https://github.com/gojoego/git_practice_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+joes-mbp:git_practice joe$  because the remote contains work that you do
+joes-mbp:git_practice joe$ git push
+Everything up-to-date. You may want to first integrate the remote changes
+joes-mbp:git_practice joe$ git push -u joe_gits_it master
+To https://github.com/gojoego/git_practice_2.git push --help' for details.
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+joes-mbp:git_practice joe$ cd ..
+joes-mbp:CodingNomads joe$ cd git_practice_2
+joes-mbp:git_practice_2 joe$ git status
+On branch master
+Your branch is up to date with 'git_me/master'.
+
+nothing to commit, working tree clean
+joes-mbp:git_practice_2 joe$ sudo rm -r git_practice_2
+Password:
+rm: git_practice_2: No such file or directory
+joes-mbp:git_practice_2 joe$ cd ..
+joes-mbp:CodingNomads joe$ sudo rm -r git_practice_2
+joes-mbp:CodingNomads joe$ ls -al
+total 16
+drwxr-xr-x  8 joe  staff   256 Jan 21 22:00 .
+drwx------+ 8 joe  staff   256 Jan 19 14:40 ..
+-rw-r--r--@ 1 joe  staff  6148 Jan 19 19:28 .DS_Store
+drwxr-xr-x  4 joe  staff   128 Jan 19 19:03 Terminal_testing
+drwxr-xr-x  6 joe  staff   192 Jan 21 21:26 git_practice
+drwxr-xr-x  5 joe  staff   160 Jan 19 15:59 labs
+drwxr-xr-x  2 joe  staff    64 Jan 17 02:46 projects
+drwxr-xr-x  2 joe  staff    64 Jan 17 02:46 resources
+joes-mbp:CodingNomads joe$ cd git_practice/
+joes-mbp:git_practice joe$ ls -al
+total 24
+drwxr-xr-x   6 joe  staff  192 Jan 21 21:26 .
+drwxr-xr-x   8 joe  staff  256 Jan 21 22:00 ..
+drwxr-xr-x  14 joe  staff  448 Jan 21 21:52 .git
+-rw-r--r--   1 joe  staff   15 Jan 21 21:02 README.md
+-rw-r--r--   1 joe  staff  951 Jan 21 21:16 git_cheat_sheet.txt
+-rw-r--r--   1 joe  staff  214 Jan 21 21:26 pushing_projects_to_git.txt
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (fetch)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (push)
+joes-mbp:git_practice joe$ git push -u joe_gits_it masater
+error: src refspec masater does not match any.
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+joes-mbp:git_practice joe$ git push -u joe_gits_it master
+To https://github.com/gojoego/git_practice_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+joes-mbp:git_practice joe$ git pull
+Already up to date.
+joes-mbp:git_practice joe$
+joes-mbp:git_practice joe$ git push
+Everything up-to-date
+joes-mbp:git_practice joe$ ls -al
+total 24
+drwxr-xr-x   6 joe  staff  192 Jan 21 21:26 .
+drwxr-xr-x   8 joe  staff  256 Jan 21 22:00 ..
+drwxr-xr-x  14 joe  staff  448 Jan 21 22:01 .git
+-rw-r--r--   1 joe  staff   15 Jan 21 21:02 README.md
+-rw-r--r--   1 joe  staff  951 Jan 21 21:16 git_cheat_sheet.txt
+-rw-r--r--   1 joe  staff  214 Jan 21 21:26 pushing_projects_to_git.txt
+joes-mbp:git_practice joe$ git add pushing_projects_to_git.txt
+joes-mbp:git_practice joe$ git commit -m "pushing to new repo"
+On branch master
+Your branch is up to date with 'git_joe/master'.
+
+nothing to commit, working tree clean
+joes-mbp:git_practice joe$ touch test.txt
+joes-mbp:git_practice joe$ git add test.txt
+joes-mbp:git_practice joe$ git commit -m "test.txt" -test
+[master b756e29] test.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+joes-mbp:git_practice joe$ git commit -m "test"
+On branch master
+Your branch is ahead of 'git_joe/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+joes-mbp:git_practice joe$ git push -u joe_gits_it master
+To https://github.com/gojoego/git_practice_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+joes-mbp:git_practice joe$ git push -u joe_gits_it
+To https://github.com/gojoego/git_practice_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+joes-mbp:git_practice joe$ pwd
+/Users/joe/Documents/CodingNomads/git_practice
+joes-mbp:git_practice joe$ ls -al
+total 24
+drwxr-xr-x   7 joe  staff  224 Jan 21 22:11 .
+drwxr-xr-x   8 joe  staff  256 Jan 21 22:00 ..
+drwxr-xr-x  14 joe  staff  448 Jan 21 22:12 .git
+-rw-r--r--   1 joe  staff   15 Jan 21 21:02 README.md
+-rw-r--r--   1 joe  staff  951 Jan 21 21:16 git_cheat_sheet.txt
+-rw-r--r--   1 joe  staff  214 Jan 21 21:26 pushing_projects_to_git.txt
+-rw-r--r--   1 joe  staff    0 Jan 21 22:11 test.txt
+joes-mbp:git_practice joe$ git status
+On branch master
+Your branch is ahead of 'git_joe/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+joes-mbp:git_practice joe$ git log
+commit b756e299971744899bf9feea2540e0dec03478fd (HEAD -> master)
+Author: Joe Gallego <josephjgallego@gmail.com>
+Date:   Tue Jan 21 22:12:08 2020 -0800
+
+    test.txt
+
+commit 812b64f92af3886865ef0b71cb912d9937d4f373 (git_joe/master)
+Author: Joe Gallego <josephjgallego@gmail.com>
+Date:   Tue Jan 21 21:27:34 2020 -0800
+
+    outline for pushing to git
+
+commit 5ddba48d79539859e0ab2a5a267a558ff43beea0
+Author: Joe Gallego <josephjgallego@gmail.com>
+Date:   Tue Jan 21 21:18:41 2020 -0800
+
+    beginner git user
+
+commit a6c6e9d9f416ec4c378ed18ab3b3e844e0a5fba7
+Author: Joe Gallego <josephjgallego@gmail.com>
+Date:   Tue Jan 21 21:02:50 2020 -0800
+
+    first commit for git_practice
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (fetch)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (push)
+joes-mbp:git_practice joe$ git status
+On branch master
+Your branch is ahead of 'git_joe/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+joes-mbp:git_practice joe$ git push joe_gits_it master
+To https://github.com/gojoego/git_practice_2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/gojoego/git_practice_2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+joes-mbp:git_practice joe$ git pull joe_gits_it master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/gojoego/git_practice_2
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> joe_gits_it/master
+fatal: refusing to merge unrelated histories
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (fetch)
+joe_gits_it	https://github.com/gojoego/git_practice_2.git (push)
+joes-mbp:git_practice joe$ git remote rm joe_gits_it
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+joes-mbp:git_practice joe$ git remote add gitpractice2 https://github.com/gojoego/git_practice_2.git
+joes-mbp:git_practice joe$ git remote -v
+git_joe	https://github.com/gojoego/git_practice.git (fetch)
+git_joe	https://github.com/gojoego/git_practice.git (push)
+gitpractice2	https://github.com/gojoego/git_practice_2.git (fetch)
+gitpractice2	https://github.com/gojoego/git_practice_2.git (push)
+joes-mbp:git_practice joe$ git push gitpractice2 master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (12/12), 1.49 KiB | 1.49 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/gojoego/git_practice_2.git
+ * [new branch]      master -> master
+joes-mbp:git_practice joe$ ls -al
+total 24
+drwxr-xr-x   7 joe  staff  224 Jan 21 22:11 .
+drwxr-xr-x   8 joe  staff  256 Jan 21 22:00 ..
+drwxr-xr-x  15 joe  staff  480 Jan 21 23:22 .git
+-rw-r--r--   1 joe  staff   15 Jan 21 21:02 README.md
+-rw-r--r--   1 joe  staff  951 Jan 21 21:16 git_cheat_sheet.txt
+-rw-r--r--   1 joe  staff  214 Jan 21 21:26 pushing_projects_to_git.txt
+-rw-r--r--   1 joe  staff    0 Jan 21 22:11 test.txt
+joes-mbp:git_practice joe$ cd ..
+joes-mbp:CodingNomads joe$ ls -al
+total 16
+drwxr-xr-x  8 joe  staff   256 Jan 21 22:00 .
+drwx------+ 9 joe  staff   288 Jan 22 22:55 ..
+-rw-r--r--@ 1 joe  staff  6148 Jan 19 19:28 .DS_Store
+drwxr-xr-x  4 joe  staff   128 Jan 19 19:03 Terminal_testing
+drwxr-xr-x  7 joe  staff   224 Jan 21 22:11 git_practice
+drwxr-xr-x  5 joe  staff   160 Jan 19 15:59 labs
+drwxr-xr-x  2 joe  staff    64 Jan 17 02:46 projects
+drwxr-xr-x  2 joe  staff    64 Jan 17 02:46 resources
+joes-mbp:CodingNomads joe$ mkdir cave_of_programming
+joes-mbp:CodingNomads joe$ cd cave_of_programming/
+joes-mbp:cave_of_programming joe$ git init
+Initialized empty Git repository in /Users/joe/Documents/CodingNomads/cave_of_programming/.git/
+joes-mbp:cave_of_programming joe$ git clone https://github.com/caveofprogramming/java-beginners.git
+Cloning into 'java-beginners'...
+remote: Enumerating objects: 226, done.
+remote: Total 226 (delta 0), reused 0 (delta 0), pack-reused 226
+Receiving objects: 100% (226/226), 36.70 KiB | 874.00 KiB/s, done.
+Resolving deltas: 100% (11/11), done.
+joes-mbp:cave_of_programming joe$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	java-beginners/
+
+nothing added to commit but untracked files present (use "git add" to track)
+joes-mbp:cave_of_programming joe$ git add java-beginners/
+joes-mbp:cave_of_programming joe$ git commit -m "first commit"
+[master (root-commit) f043459] first commit
+ 91 files changed, 2962 insertions(+)
+ create mode 100644 java-beginners/05 - A Hello World Program/src/Application.java
+ create mode 100644 java-beginners/06 - Using Variables/src/Application.java
+ create mode 100644 java-beginners/07 - Strings - Working With Text/src/Application.java
+ create mode 100644 java-beginners/08 - While Loops/src/Application.java
+ create mode 100644 java-beginners/09 - For Loops/src/Application.java
+ create mode 100644 java-beginners/10 - if/src/Application.java
+ create mode 100644 java-beginners/11 - Getting User Input/src/App.java
+ create mode 100644 java-beginners/12 - Do While/src/App.java
+ create mode 100644 java-beginners/13 - Switch/src/Application.java
+ create mode 100644 java-beginners/14 - Arrays/src/App.java
+ create mode 100644 java-beginners/15 - Arrays of Strings/src/App.java
+ create mode 100644 java-beginners/16 - Multi-Dimensional Arrays/src/App.java
+ create mode 100644 java-beginners/17 - Classes and Objects/src/App.java
+ create mode 100644 java-beginners/18 - Methods/src/App.java
+ create mode 100644 java-beginners/19 - Getters and Return Values/src/App.java
+ create mode 100644 java-beginners/20 - Method Parameters/src/App.java
+ create mode 100644 java-beginners/22 - Constructors/src/App.java
+ create mode 100644 java-beginners/23 - Static (and Final)/src/App.java
+ create mode 100644 java-beginners/24 - StringBuilder and String Formatting/src/App.java
+ create mode 100644 java-beginners/25 - The toString Method/src/App.java
+ create mode 100644 java-beginners/26 - Inheritance/src/App.java
+ create mode 100644 java-beginners/26 - Inheritance/src/Car.java
+ create mode 100644 java-beginners/26 - Inheritance/src/Machine.java
+ create mode 100644 java-beginners/27 - Packages/src/App.java
+ create mode 100644 java-beginners/27 - Packages/src/com/caveofprogramming/oceangame/Aquarium.java
+ create mode 100644 java-beginners/27 - Packages/src/ocean/Fish.java
+ create mode 100644 java-beginners/27 - Packages/src/ocean/plants/Algae.java
+ create mode 100644 java-beginners/27 - Packages/src/ocean/plants/Seaweed.java
+ create mode 100644 java-beginners/28 - Interfaces/src/App.java
+ create mode 100644 java-beginners/28 - Interfaces/src/IStartable.java
+ create mode 100644 java-beginners/28 - Interfaces/src/Info.java
+ create mode 100644 java-beginners/28 - Interfaces/src/Machine.java
+ create mode 100644 java-beginners/28 - Interfaces/src/Person.java
+ create mode 100644 java-beginners/29 - Public,Private,Protected/src/App.java
+ create mode 100644 java-beginners/29 - Public,Private,Protected/src/Grass.java
+ create mode 100644 java-beginners/29 - Public,Private,Protected/src/world/Field.java
+ create mode 100644 java-beginners/29 - Public,Private,Protected/src/world/Oak.java
+ create mode 100644 java-beginners/29 - Public,Private,Protected/src/world/Plant.java
+ create mode 100644 java-beginners/30 - Polymorphism/src/App.java
+ create mode 100644 java-beginners/30 - Polymorphism/src/Plant.java
+ create mode 100644 java-beginners/30 - Polymorphism/src/Tree.java
+ create mode 100644 java-beginners/31 - Encapsulation and the API Docs/src/App.java
+ create mode 100644 java-beginners/32 - Casting Numerical Values/src/App.java
+ create mode 100644 java-beginners/33 - Upcasting and Downcasting/src/App.java
+ create mode 100644 java-beginners/34 - Using Generics/src/App.java
+ create mode 100644 java-beginners/35 - Generics and Wildcards/src/App.java
+ create mode 100644 java-beginners/36 - Anonymous Classes/src/App.java
+ create mode 100644 java-beginners/37 - Reading Files using Scanner/src/App.java
+ create mode 100644 java-beginners/38 - Handling exceptions/src/demo1/App.java
+ create mode 100644 java-beginners/38 - Handling exceptions/src/demo2/App.java
+ create mode 100644 java-beginners/38 - Handling exceptions/src/demo3/App.java
+ create mode 100644 java-beginners/39 - Multiple Exceptions/src/App.java
+ create mode 100644 java-beginners/39 - Multiple Exceptions/src/Test.java
+ create mode 100644 java-beginners/40 - Runtime vs. checked Exceptions/src/App.java
+ create mode 100644 java-beginners/41 - Abstract Classes/src/App.java
+ create mode 100644 java-beginners/41 - Abstract Classes/src/Camera.java
+ create mode 100644 java-beginners/41 - Abstract Classes/src/Car.java
+ create mode 100644 java-beginners/41 - Abstract Classes/src/Machine.java
+ create mode 100644 java-beginners/42 - Reading Files With File Reader/src/App.java
+ create mode 100644 java-beginners/43 - Try With Resources/src/App.java
+ create mode 100644 java-beginners/43 - Try With Resources/src/App2.java
+ create mode 100644 java-beginners/44 - Creating and Writing Text Files/src/App.java
+ create mode 100644 java-beginners/44 - Creating and Writing Text Files/test.txt
+ create mode 100644 java-beginners/45 - The equals() Method/src/App.java
+ create mode 100644 java-beginners/46 - Inner Classes/src/App.java
+ create mode 100644 java-beginners/46 - Inner Classes/src/Robot.java
+ create mode 100644 java-beginners/47 - Enum Types - Basic and Advanced Usage/src/Animal.java
+ create mode 100644 java-beginners/47 - Enum Types - Basic and Advanced Usage/src/App.java
+ create mode 100644 java-beginners/48 - Recursion - A useful trick up your sleeve/src/App.java
+ create mode 100644 java-beginners/49 - Serialization - Saving Objects to Files/people.bin
+ create mode 100644 java-beginners/49 - Serialization - Saving Objects to Files/src/Person.java
+ create mode 100644 java-beginners/49 - Serialization - Saving Objects to Files/src/ReadObjects.java
+ create mode 100644 java-beginners/49 - Serialization - Saving Objects to Files/src/WriteObjects.java
+ create mode 100644 java-beginners/50 - Serializing Arrays/src/Person.java
+ create mode 100644 java-beginners/50 - Serializing Arrays/src/ReadObjects.java
+ create mode 100644 java-beginners/50 - Serializing Arrays/src/WriteObjects.java
+ create mode 100644 java-beginners/50 - Serializing Arrays/test.ser
+ create mode 100644 java-beginners/51 - ArrayList - Arrays the Easy Way/src/App.java
+ create mode 100644 java-beginners/52 - Linked Lists/src/App.java
+ create mode 100644 java-beginners/53 - HashMaps - Retrieving Objects via a Key/src/App.java
+ create mode 100644 java-beginners/54 - Sorted Maps/src/App.java
+ create mode 100644 java-beginners/55 - Sets/src/App.java
+ create mode 100644 java-beginners/56 - Using Custom Objects in Sets and as Keys in Maps/src/App.java
+ create mode 100644 java-beginners/57 - Sorting Lists/src/App.java
+ create mode 100644 java-beginners/58 - Natural Ordering/src/App.java
+ create mode 100644 java-beginners/59 - Queues/src/App.java
+ create mode 100644 java-beginners/60 - Using Iterators/src/App.java
+ create mode 100644 java-beginners/61 - Implementing Iterable/src/UrlLibrary.java
+ create mode 100644 java-beginners/62 - Deciding Which Collections to use/src/App.java
+ create mode 100644 java-beginners/63 - Complex Data Structures/src/App.java
+ create mode 100644 java-beginners/README.md
+joes-mbp:cave_of_programming joe$ git remote add origin https://github.com/gojoego/cave_clone.git
+joes-mbp:cave_of_programming joe$ git remote -v
+origin	https://github.com/gojoego/cave_clone.git (fetch)
+origin	https://github.com/gojoego/cave_clone.git (push)
+joes-mbp:cave_of_programming joe$ git push -u origin master
+Enumerating objects: 218, done.
+Counting objects: 100% (218/218), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (109/109), done.
+Writing objects: 100% (218/218), 34.94 KiB | 2.18 MiB/s, done.
+Total 218 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/gojoego/cave_clone.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+joes-mbp:cave_of_programming joe$
