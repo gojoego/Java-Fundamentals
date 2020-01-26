@@ -18,6 +18,16 @@ public class Exercise_01 {
 
         // write code here
 
+        int intVal = 100;
+        double douVal = 1000000000.00;
+        float floatVal = 100000;
+        char charVal = 'J';
+
+        System.out.println("I'm going to live to be " +intVal+" years old.");
+        System.out.println("When I have " +douVal+ " dollars in my bank account, I'll be a billionaire.");
+        System.out.println("If I make $" + floatVal + " a year, that means I make a six-digit salary.");
+        System.out.println("My favorite letter in the alphabet is " + charVal);
+
     }
 }
 
