@@ -18,6 +18,40 @@ class LogicalOperators {
         }
 
         // write your code below
+        boolean P = false;
+        boolean Q = true;
+
+        // AND                  &
+        if (P & Q){
+            System.out.println("P and Q together is false");
+        }
+
+        // short-circuit AND    &&
+
+        if (P && Q){
+            System.out.println("P is true, then Q is true");
+        }
+
+        // OR                   |
+        if (P | Q){
+            System.out.println("P or Q are true");
+        }
+
+        // short-circuit OR     ||
+        if (P || Q){
+            System.out.println("P and Q are true");
+        }
+
+        // XOR                  ^
+        if (P ^ Q){
+            System.out.println("Either P or Q are true but not both");
+        }
+
+        // NOT                  !
+        if (P != Q){
+            System.out.println("P is NOT equal to Q");
+        }
+
 
     }
 
