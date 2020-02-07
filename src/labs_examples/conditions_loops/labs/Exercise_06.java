@@ -8,4 +8,22 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_06 {
+
+    public static void main(String[] args) {
+
+        int num = 100;
+        int count = 1;
+        int total = 0;
+
+        while(count <= num){
+
+            total = total + count;
+            count++;
+
+        }
+
+        System.out.println(total);
+
+    }
+
 }
