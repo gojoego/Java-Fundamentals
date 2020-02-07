@@ -8,4 +8,22 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_08 {
+
+    public static void main(String[] args) {
+
+        // declare x as an int starting at 1000
+        int x = 1000;
+
+        do{
+            // print out x
+            System.out.println(x);
+
+            // calculate x - 3 in the loop
+            x = x - 3;
+
+          // make sure this only runs to 1
+        } while(x > 0);
+
+    }
+
 }
