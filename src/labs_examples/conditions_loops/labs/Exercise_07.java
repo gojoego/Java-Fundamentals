@@ -25,9 +25,15 @@ public class Exercise_07 {
         System.out.println("enter word: ");
 
         String word = scanner.next();
-        for
-
-
-
+        String vowels = "aeiou";
+        int x = 0;
+        while(x < word.length()){
+            char letter = word.charAt(x);
+            if (vowels.indexOf(letter) >= 0){
+                System.out.println("first vowel in " + word + " is " + letter);
+                break;
+            }
+            x++;
+        }
     }
 }

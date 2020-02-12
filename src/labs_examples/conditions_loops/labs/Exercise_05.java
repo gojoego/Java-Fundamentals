@@ -54,9 +54,6 @@ public class Exercise_05 {
         System.out.println("average: " + avg);
 
 
-
-
-
     }
 
 }
