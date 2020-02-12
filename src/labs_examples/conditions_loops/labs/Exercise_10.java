@@ -11,9 +11,10 @@ public class Exercise_10 {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 10; i++){
+        // create a for loop
+        for (int i = 1; i <= 100; i++){
 
-            if (i > 4 && i < 9) {
+            if (i > 60  && i < 90) {
                 continue;
             }
             System.out.println(i);
