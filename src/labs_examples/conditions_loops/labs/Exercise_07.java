@@ -24,16 +24,19 @@ public class Exercise_07 {
         // prompt user to enter word
         System.out.println("enter word: ");
 
-        String word = scanner.next();
-        String vowels = "aeiou";
-        int x = 0;
-        while(x < word.length()){
-            char letter = word.charAt(x);
-            if (vowels.indexOf(letter) >= 0){
-                System.out.println("first vowel in " + word + " is " + letter);
+        String inputtedWord = scanner.next();
+        String VOWELS = "aeiou";
+        int currentIdx = 0;
+        while(currentIdx < inputtedWord.length()){
+
+            char currentLetter = inputtedWord.charAt(currentIdx);
+
+            if (VOWELS.indexOf(currentLetter) >= 0){
+
+                System.out.println("first vowel in " + inputtedWord + " is " + currentLetter);
                 break;
             }
-            x++;
+            currentIdx++;
         }
     }
 }
