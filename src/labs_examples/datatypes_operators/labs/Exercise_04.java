@@ -16,6 +16,15 @@ class RelationalOperators {
             System.out.println("c is less than d");
         }
 
+        int i = 10;
+        if (i == 10){
+            System.out.println("i = 10");
+        } else if (i < 10){
+            System.out.println("i is less than");
+        } else {
+            System.out.println("is greater than 10");
+        }
+
         // write your code below
         int a = 10;
         int b = 11;
