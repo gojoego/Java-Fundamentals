@@ -24,15 +24,19 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
-        // widening
-        int intVal1 = 10;
-        double douVal1 = intVal1;
-        System.out.println(douVal1);
 
-        // narrowing
-        double douVal2 = 10.5;
-        int intVal2 = (int) douVal2;
-        System.out.println(intVal2);
+        // widening conversion: converts lower-ranked value to higher-ranked type
+        // converting int to double
+        int valueToWiden = 10;
+        double widenedValue = valueToWiden;
+        System.out.println(widenedValue);
+
+        // narrowing conversion: conversion of value to lower-ranked type
+        // converting double to int
+        // likely to cause data loss
+        double highRanked = 10.5;
+        int lowerValue = (int) highRanked;
+        System.out.println(lowerValue);
 
     }
 }
