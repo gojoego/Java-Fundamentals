@@ -25,8 +25,9 @@ public class Exercise_07 {
         System.out.println("enter word: ");
 
         String inputtedWord = scanner.next();
-        String VOWELS = "aeiou";
+        final String VOWELS = "aeiou";
         int currentIdx = 0;
+
         while(currentIdx < inputtedWord.length()){
 
             char currentLetter = inputtedWord.charAt(currentIdx);

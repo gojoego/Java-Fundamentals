@@ -16,14 +16,9 @@ public class Exercise_06 {
         int total = 0;
 
         while(count <= num){
-
-            total = total + count;
+            total += count;
             count++;
-
         }
-
         System.out.println(total);
-
     }
-
 }

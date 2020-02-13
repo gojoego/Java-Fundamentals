@@ -38,7 +38,7 @@ public class Exercise_05 {
 
         int sum = 0;
         // for loop calculating sum of numbers from lower bound to upper bound
-        for(double count = lower; count <= upper; count = count + 1){
+        for(double count = lower; count <= upper; count += 1){
             sum += count;
         }
 

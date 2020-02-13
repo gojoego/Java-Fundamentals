@@ -19,7 +19,7 @@ public class Exercise_08 {
             System.out.println(x);
 
             // calculate x - 3 in the loop
-            x = x - 3;
+            x -= 3;
 
           // make sure this only runs to 1
         } while(x > 0);
