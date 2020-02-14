@@ -13,15 +13,18 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         // write code here
-        // volume of a cylinder = pi * (3.14 * 3.14) * height
+        // volume of a cylinder = pi * (r * r) * height
+        // radius = 3.14
         // height = 5
         // utilize Math.PI
         double volCylinder = Math.PI * (3.14 * 3.14) * 5;
         System.out.println("The volume is " + volCylinder);
 
         // surface area of a cylinder =
-        // 2 * pi * (3.14 * 3.14)
-        // + 2 * pi * (3.14*5)
+        // 2 * pi * (r * r)
+        // + 2 * pi * (3.14* height)
+        // radius = 3.14
+        // height = 5
         double surfaceArea = 2 * Math.PI * (3.14 * 3.14) + 2 * Math.PI * (3.14 * 5);
         System.out.println("The surface area is " + surfaceArea);
 
