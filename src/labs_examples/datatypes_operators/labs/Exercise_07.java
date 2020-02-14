@@ -18,18 +18,21 @@ public class Exercise_07 {
 
         // create scanner
         Scanner scanner = new Scanner(System.in);
+
         // prompt user
         System.out.print("Enter a number in days between 1 and 1,000,000: ");
+
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // multiply value by 86400 (days to seconds)
+        // multiply value you get from user input by 86400 (days to seconds)
 
         double seconds = days * 86400;
 
-        System.out.println("There are "+seconds+" seconds in "+days+" days.");
+        // print out the results
+        System.out.println("There are " + seconds + " seconds in " + days + " days.");
 
-        // write completed code here
+
 
     }
 }
