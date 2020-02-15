@@ -19,7 +19,7 @@ public class Exercise_01 {
         // create scanner
         // Scanner: class in java.util package used for obtaining input
         // of primitive types like int, double, etc
-        Scanner scanner = new Scanner(System.in);
+        /* Scanner scanner = new Scanner(System.in);
 
         // prompt first number
         System.out.println("Enter first number: ");
@@ -96,6 +96,16 @@ public class Exercise_01 {
         tenInputArray[7] = eighth;
         tenInputArray[8] = ninth;
         tenInputArray[9] = tenth;
+        */
+
+        // you can use a for loop to simplify the above process
+
+        double [] tenInputArray = new double[10];
+
+        Scanner scanner = new Scanner(System.in);
+        for (int a = 0; a < tenInputArray.length; a++) {
+
+        }
 
         // use for loop to print out Array
         for (int printArray = 0; printArray < tenInputArray.length; printArray++){

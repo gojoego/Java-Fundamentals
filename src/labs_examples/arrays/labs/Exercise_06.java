@@ -11,4 +11,8 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_06 {
+
+    public static void main(String[] args) {
+
+    }
 }
