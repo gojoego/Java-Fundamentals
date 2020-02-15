@@ -104,15 +104,23 @@ public class Exercise_01 {
 
         Scanner scanner = new Scanner(System.in);
 
-        for (int a = 0; a < tenInputArray.length; a++) {
-            for (int i = 0; )
+        /*for (double num: tenInputArray){
+            System.out.println(num);
             System.out.println("please enter a number: ");
-            double first = scanner.nextDouble();
-            tenInputArray[0] = first;
-            System.out.println(tenInputArray[0]);
+            num = scanner.nextDouble();
+            System.out.println(num);
 
         }
-        /*
+*/
+
+        for (int a = 0; a < tenInputArray.length; a++) {
+            System.out.println("please enter a number: ");
+            double b = scanner.nextDouble();
+            tenInputArray[a] = b;
+            System.out.println(tenInputArray[a]);
+        }
+
+
         // use for loop to print out Array
         for (int printArray = 0; printArray < tenInputArray.length; printArray++){
             System.out.println(tenInputArray[printArray]);
@@ -130,11 +138,11 @@ public class Exercise_01 {
         System.out.println("sum: " + sumTenArray);
 
         // calculate the average
-        double avgTenArray = (first + second + third + fourth + fifth + sixth + seventh + eighth + ninth + tenth) / 10;
+        double avgTenArray = sumTenArray / 10;
 
         // print the average
         System.out.println("average: " + avgTenArray);
-        */
+
     }
 
 }
