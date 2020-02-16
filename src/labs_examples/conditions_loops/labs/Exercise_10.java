@@ -16,6 +16,7 @@ public class Exercise_10 {
         for (int i = 1; i <= 100; i++){
 
             // continue statement
+            // using an if statement
             if (i > 60  && i < 90) {
                 continue;
             }
