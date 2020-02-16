@@ -2,3 +2,22 @@
 Please demonstrate Object association by creating at least two POJOs and a Controller class. The Controller
 class will contain the main() method. In the main() create an object of each POJO you just created and associate
 the two together. (This is easier than it sounds. Refer to the Object Association documentation if you're not sure.)
+
+object association
+- relation between two separate classes which establishes through their Objects
+- can be
+    1 to 1
+    1 to many
+    many to 1
+    many to many
+- OOP: Object communicates to other Object to use functionality and services provided by that object
+
+POJO
+- plain old java object
+- not bound by any special restriction other than those forced by Java
+- does not require any class path
+- used for increasing readability and re-usability of program
+
+Controller
+- controls flow of data
+- controls data flow into model object and updates view whenever data changes
