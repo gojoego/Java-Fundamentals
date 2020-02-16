@@ -17,6 +17,12 @@ public class Exercise_10 {
 
             // continue statement
             // using an if statement
+            // if 'i' is more than 60
+            // AND 'i' is less than 90
+            // the code instructs to print out 'i'
+            // meaning 1 to 60 are printed
+            // then 90 to 100 are printed
+            // 61 to 89 are NOT printed 
             if (i > 60  && i < 90) {
                 continue;
             }
