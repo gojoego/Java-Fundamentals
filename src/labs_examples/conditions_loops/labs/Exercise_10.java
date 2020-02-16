@@ -11,9 +11,11 @@ public class Exercise_10 {
 
     public static void main(String[] args) {
 
-        // create a for loop
+        // for loop
+        // count starts at 1, increments by 1 until less than or equal to 100
         for (int i = 1; i <= 100; i++){
 
+            // continue statement
             if (i > 60  && i < 90) {
                 continue;
             }

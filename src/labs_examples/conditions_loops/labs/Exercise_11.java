@@ -36,7 +36,7 @@ public class Exercise_11 {
                 // multiply a * b for each index on each row
                 System.out.print(a * b + " |");
             }
-            // needed so that it prints on next line after 10 iterations 
+            // needed so that it prints on next line after 10 iterations
             System.out.println();
         }
     }
