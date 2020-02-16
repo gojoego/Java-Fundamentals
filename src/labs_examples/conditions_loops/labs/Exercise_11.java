@@ -25,10 +25,18 @@ public class Exercise_11 {
 
     public static void main(String[] args) {
 
+        // nested for loop
+        // outer loop
+        // the count starts at 1 and goes through until it is less than or equal to 10
+        // goes through the rows
         for (int a = 1; a <= 10; a++){
+            // inner loop
+            // iterates 10x, count starts at 1 and goes to 10
             for (int b = 1; b <=10; b++){
+                // multiply a * b for each index on each row
                 System.out.print(a * b + " |");
             }
+            // needed so that it prints on next line after 10 iterations 
             System.out.println();
         }
     }
