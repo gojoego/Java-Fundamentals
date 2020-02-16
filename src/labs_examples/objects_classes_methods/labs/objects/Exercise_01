@@ -1,8 +1,32 @@
 
 Following the example in CarExample.java, please use Object Composition to model an Airplane class.
+
+-created 4 classes: Aircraft, Airline, Airplane, Capacity
+
 The Airplane class must be composed of at least 4 other classes (as well as any primitive types you'd like).
+
 The Airplane class itself should have a fuel capacity (double) variable, as well as a currentFuelLevel variable.
 We'll use these a bit later.
+
+class Airplane {
+
+    double fuelCapacity;
+    String currentFuelLevel;
+    long numPpl;
+    String engine;
+    String airlineName;
+    String baseCountry;
+
+    public Airplane(double fuelCapacity, String currentFuelLevel,
+                    long numPpl, String engine, String airlineName, String baseCountry) {
+
+        this.fuelCapacity = fuelCapacity;
+        this.currentFuelLevel = currentFuelLevel;
+        this.numPpl = numPpl;
+        this.engine = engine;
+        this.airlineName = airlineName;
+        this.baseCountry = baseCountry;
+
 
 object composition
 - restricted form of association
@@ -12,3 +36,76 @@ object composition
 
 Example found via Google
 
+// Java program to illustrate
+// the concept of Composition
+import java.io.*;
+import java.util.*;
+
+// class book
+class Book
+{
+
+    public String title;
+    public String author;
+
+    Book(String title, String author)
+    {
+
+        this.title = title;
+        this.author = author;
+    }
+}
+
+// Library class contains
+// list of books.
+class Library
+{
+
+    // reference to refer to list of books.
+    private final List<Book> books;
+
+    Library (List<Book> books)
+    {
+        this.books = books;
+    }
+
+    public List<Book> getTotalBooksInLibrary(){
+
+       return books;
+    }
+
+}
+
+// main method
+class GFG
+{
+    public static void main (String[] args)
+    {
+
+        // Creating the Objects of Book class.
+        Book b1 = new Book("EffectiveJ Java", "Joshua Bloch");
+        Book b2 = new Book("Thinking in Java", "Bruce Eckel");
+        Book b3 = new Book("Java: The Complete Reference", "Herbert Schildt");
+
+        // Creating the list which contains the
+        // no. of books.
+        List<Book> books = new ArrayList<Book>();
+        books.add(b1);
+        books.add(b2);
+        books.add(b3);
+
+        Library library = new Library(books);
+
+        List<Book> bks = library.getTotalBooksInLibrary();
+        for(Book bk : bks){
+
+            System.out.println("Title : " + bk.title + " and "
+            +" Author : " + bk.author);
+        }
+    }
+}
+Output
+
+Title : EffectiveJ Java and  Author : Joshua Bloch
+Title : Thinking in Java and  Author : Bruce Eckel
+Title : Java: The Complete Reference and  Author : Herbert Schildt
