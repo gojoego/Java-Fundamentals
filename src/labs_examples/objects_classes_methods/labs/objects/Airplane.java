@@ -1,10 +1,16 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
-class AirplaneLab {
+class AirplaneController {
 
     public static void main(String[] args) {
 
+        Airplane myAirplane = new Airplane(1000, "full", 300, "fast", "United", "USA");
 
+        Airline myAirline = new Airline("United", "USA");
+
+        Aircraft myAircraft = new Aircraft("fast");
+
+        Capacity myCapacity = new Capacity(300);
 
     }
 }
