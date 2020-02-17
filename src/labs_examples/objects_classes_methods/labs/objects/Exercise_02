@@ -65,3 +65,24 @@ public class Employee
 Controller
 - controls flow of data
 - controls data flow into model object and updates view whenever data changes
+
+Example of object association from online lessons
+
+public class Vehicle {
+   String model;
+    public Vehicle(String model){
+        this.model = model;
+    }
+}
+public class Person {
+    String name;
+    public Person(String name){
+        this.name = name;
+    }
+}
+public class PersonVehicleAssociation {
+    Vehicle v = new Vehicle("XTerra");
+    Person p = new Person("Kim");
+    System.out.println(p.name + " drives an " + v.model);
+}
+Output: "Kim drives an XTerra"

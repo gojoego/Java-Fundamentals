@@ -9,6 +9,7 @@ class Example {
 
     public static void main(String[] args){
 
+
         Engine myEngine = new Engine(400);
 
         Stereo myStereo = new Stereo("Panasonic");
