@@ -38,6 +38,8 @@ public class Exercise_05 {
             System.out.println(countries[i]);
         }
 
+        System.out.println();
+
         // do this but the opposite using a for loop for reverse order
         for (int j = 9; j >= 0; j = j - 2){
             System.out.println(countries[j]);
