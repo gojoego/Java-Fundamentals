@@ -28,35 +28,33 @@ class Airplane {
 
     double fuelCapacity;
     String currentFuelLevel;
-    long numPpl;
-    String engine;
     String airlineName;
     String baseCountry;
+    String engine;
+    long capacity;
 
-    public Airplane(double fuelCapacity, String currentFuelLevel,
-                    long numPpl, String engine, String airlineName, String baseCountry) {
-
+    public Airplane(double fuelCapacity, String currentFuelLevel, String airlineName, String baseCountry, String engine, long capacity) {
         this.fuelCapacity = fuelCapacity;
         this.currentFuelLevel = currentFuelLevel;
-        this.numPpl = numPpl;
-        this.engine = engine;
         this.airlineName = airlineName;
         this.baseCountry = baseCountry;
+        this.engine = engine;
+        this.capacity = capacity;
     }
-
 
     @Override
     public String toString() {
         return "Airplane{" +
                 "fuelCapacity=" + fuelCapacity +
                 ", currentFuelLevel='" + currentFuelLevel + '\'' +
-                ", numPpl=" + numPpl +
-                ", engine='" + engine + '\'' +
                 ", airlineName='" + airlineName + '\'' +
                 ", baseCountry='" + baseCountry + '\'' +
+                ", engine='" + engine + '\'' +
+                ", capacity=" + capacity +
                 '}';
     }
 }
+
 
 class Airline {
 
@@ -98,21 +96,20 @@ class Aircraft {
 
 class Capacity {
 
-    long numPpl;
+    long capacity;
 
-    public Capacity(long numPpl) {
-
-        this.numPpl = numPpl;
-
+    public Capacity(long capacity) {
+        this.capacity = capacity;
     }
 
     @Override
     public String toString() {
         return "Capacity{" +
-                "numPpl=" + numPpl +
+                "capacity=" + capacity +
                 '}';
     }
 }
+
 
 // is this association???
 class AircraftCapacity {
