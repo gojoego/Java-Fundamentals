@@ -24,6 +24,21 @@ public class Exercise_01 {
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
 
+        int a = 32;
+        int b = 4;
+
+        // variable type needs to match
+        int product = multiply(a, b);
+        System.out.println("product: " + product);
+
+        int quotient = divide(a, b);
+        System.out.println("quotient: " + quotient);
+
+        joke();
+
+        int years = 33;
+        int seconds = yearsSeconds(years);
+        System.out.println("There are " + seconds + " in " + years + " years.");
     }
 
 
@@ -44,8 +59,7 @@ public class Exercise_01 {
     // 3) Create a static void method that will print of joke of your choice to the console
 
     public static void joke(){
-        System.out.println("Have you heard about a new restaurant called Karma?" +
-                " There's no menu: you get what you deserve");
+        System.out.println("JOKE: Our current president is the biggest joke of all time. Period.");
     }
 
     // 4) Create a static method that takes in a number in years (int years) as an argument
@@ -56,6 +70,13 @@ public class Exercise_01 {
     }
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
+
+
+
+    // variable length arguments:
+    // must always be last argument
+
+
 
 
 

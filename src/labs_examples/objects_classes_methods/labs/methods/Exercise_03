@@ -28,7 +28,31 @@ Create a new class called MethodTraining.java and in this class please do the fo
 
 
 pass by value
--
+- with primitive data types, when you pass to another method, method gets copy of variables
 
 pass by reference
+- after method is called, object is modified
 -
+
+toString
+- concatenated string that describes object
+
+method overloading
+- polymorphism
+- 2 or more methods with same name exist
+- but methods must have different parameter types or different number of parameters
+
+- example:
+
+//method one - takes in two ints and returns the sum as an int
+int addition(int a, int b){
+    return a + b
+}
+//method two - takes in three ints and returns the sum as an int
+int addition(int a, int b, int c){
+    return a + b + c
+}
+//method three - takes in three doubles and returns the sum as an int
+int addition(double a, double b, double c){
+    return ((int)(a + b + c))
+}
