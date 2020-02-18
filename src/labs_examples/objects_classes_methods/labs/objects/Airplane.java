@@ -1,17 +1,19 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
-import com.sun.corba.se.impl.oa.poa.AOMEntry;
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
-
 // this is the controller
 class AirplaneController {
 
     public static void main(String[] args) {
 
-        Airplane bali = new Airplane(100, "Full", "United", "Texas", "Turbo", 200);
+        Capacity capacity = new Capacity(100);
+
+        AircraftEngine engine = new AircraftEngine("Fast");
+
+        Airplane bali = new Airplane(100, "Full", "United", "Texas", engine, capacity);
 
         System.out.println(bali.toString());
+
+        // object composition
 
 
     }
@@ -24,10 +26,10 @@ class Airplane {
     String currentFuelLevel;
     String airlineName;
     String baseCountry;
-    String engine;
-    long capacity;
+    AircraftEngine engine;
+    Capacity capacity;
 
-    public Airplane(double fuelCapacity, String currentFuelLevel, String airlineName, String baseCountry, String engine, long capacity) {
+    public Airplane(double fuelCapacity, String currentFuelLevel, String airlineName, String baseCountry, AircraftEngine engine, Capacity capacity) {
         this.fuelCapacity = fuelCapacity;
         this.currentFuelLevel = currentFuelLevel;
         this.airlineName = airlineName;
@@ -71,19 +73,19 @@ class Airline {
     }
 }
 
-class Aircraft {
+class AircraftEngine {
 
-    String engine;
+    String engineSpeed;
 
-    public Aircraft(String engine) {
+    public AircraftEngine(String engineSpeed) {
 
-        this.engine = engine;
+        this.engineSpeed = engineSpeed;
     }
 
     @Override
     public String toString() {
-        return "Aircraft{" +
-                "engine='" + engine + '\'' +
+        return "Engine {" +
+                "engineSpeed='" + engineSpeed + '\'' +
                 '}';
     }
 }
@@ -105,19 +107,4 @@ class Capacity {
 }
 
 
-// is this association???
-
-class AircraftCapacity {
-    Aircraft a = new Aircraft("Fast");
-    Capacity c = new Capacity(200);
-
-    public AircraftCapacity(Aircraft a, Capacity c) {
-        this.a = a;
-        this.c = c;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
-    }
-}
 
