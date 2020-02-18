@@ -18,6 +18,8 @@ public class Exercise_01 {
         // types only need to be defined once
         // return value must match variable type
         // in same class, no need to call
+        // if not static can no longer call, would need to create object
+        // hold command key and hover over method will take you directly to method
 
         // please create the methods as instructed below then
         // call each of those methods from here, within the main()
@@ -42,14 +44,15 @@ public class Exercise_01 {
     // 3) Create a static void method that will print of joke of your choice to the console
 
     public static void joke(){
-
+        System.out.println("Have you heard about a new restaurant called Karma?" +
+                " There's no menu: you get what you deserve");
     }
 
     // 4) Create a static method that takes in a number in years (int years) as an argument
     //    and returns the number of seconds that number in years represents
 
-    public static int yearsSeconds(){
-
+    public static int yearsSeconds(int years){
+        return 31536000 * years;
     }
 
     // 5) Create a varargs method that will return the length of the varargs array passed in

@@ -26,3 +26,9 @@ Create a new class called MethodTraining.java and in this class please do the fo
         instantiate a second array. You must reverse the array in place using only one extra temp variable. Hint: this
         variable is used to temporarily store individual values in the array
 
+
+pass by value
+-
+
+pass by reference
+-
