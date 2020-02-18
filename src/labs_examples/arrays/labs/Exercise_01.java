@@ -101,6 +101,15 @@ public class Exercise_01 {
         // you can use a for loop to simplify the above process
 
         double [] tenInputArray = new double[10];
+        // Here I am declaring an array of the double data type called
+        // tenInputArray. This new array has 10 indexes. I can say that this
+        // array has a length of 10. The brackets next to double indicate that
+        // I am creating an array. The "new" is needed for creating the new
+        // array. Array length is fixed. Arrays are NOT dynamically sized.
+        // You can access array via indexes. If I see tenInputArray[4] =
+        // 1000, I would say: the tenInputArray at the index of four equals
+        // one thousand.
+
 
         Scanner scanner = new Scanner(System.in);
 

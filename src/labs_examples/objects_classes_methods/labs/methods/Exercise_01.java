@@ -82,23 +82,14 @@ public class Exercise_01 {
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
 
-    public static int countArgs(String...args){
-        int count = 0;
 
-        for (String s: args){
-            count++;
-            return count;
-        }
-    }
 
-    // variable length arguments:
+
+
+
+    // overloading method leading toward redundancy
+    // variable length arguments or var args: useful if not sure how many inputs
+    // or how many arguments are needed
     // must always be last argument
-
-
-
-
-
-
-
-
+    
 }
