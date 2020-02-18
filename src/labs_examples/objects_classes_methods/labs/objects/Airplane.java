@@ -1,5 +1,6 @@
 package labs_examples.objects_classes_methods.labs.objects;
 
+import com.sun.corba.se.impl.oa.poa.AOMEntry;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.w3c.dom.ls.LSOutput;
 
@@ -8,6 +9,9 @@ class AirplaneController {
 
     public static void main(String[] args) {
 
+        Airplane bali = new Airplane(100, "Full", "United", "Texas", "Turbo", 200);
+
+        System.out.println(bali.toString());
 
 
     }
@@ -102,9 +106,18 @@ class Capacity {
 
 
 // is this association???
+
 class AircraftCapacity {
     Aircraft a = new Aircraft("Fast");
     Capacity c = new Capacity(200);
 
+    public AircraftCapacity(Aircraft a, Capacity c) {
+        this.a = a;
+        this.c = c;
+    }
+
+    public static void main(String[] args) {
+        System.out.println();
+    }
 }
 
