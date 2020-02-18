@@ -22,7 +22,7 @@ public class Exercise_10 {
             // the code instructs to print out 'i'
             // meaning 1 to 60 are printed
             // then 90 to 100 are printed
-            // 61 to 89 are NOT printed 
+            // 61 to 89 are NOT printed
             if (i > 60  && i < 90) {
                 continue;
             }

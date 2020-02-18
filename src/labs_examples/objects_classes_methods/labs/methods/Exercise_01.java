@@ -48,6 +48,10 @@ public class Exercise_01 {
     public static int multiply(int a, int b){
         return a * b;
     }
+    // This class has a public access modifier, which means that the class is visible to all classes in any location.
+    // It is a static method that returns an integer or "int" data type. The name of the method is "multiply."
+    // The method parameters or arguments are "int a" and "int b." The actual method, which lies between the two curly brackets,
+    // return the product of "int a" and "int b"
 
     // 2) Create a static divide() method below that takes two int arguments (int a, int b) and
     //    returns the result of a / b
@@ -55,12 +59,17 @@ public class Exercise_01 {
     public static int divide(int a, int b){
         return a/b;
     }
+    // This class has a public access modifier, is static, and returns an int value. The method has been named "divide."
+    // The method parameters are "int a" and "int b" and the method returns the quotient of "a" and "b."
 
     // 3) Create a static void method that will print of joke of your choice to the console
 
     public static void joke(){
         System.out.println("JOKE: Our current president is the biggest joke of all time. Period.");
     }
+    // This method is named "joke" and has a public access modifier, is static and has a void return type.
+    // There are no parameters and the method body contains code that simply prints out a joke I
+    // have inserted to be printed out.
 
     // 4) Create a static method that takes in a number in years (int years) as an argument
     //    and returns the number of seconds that number in years represents
@@ -68,10 +77,19 @@ public class Exercise_01 {
     public static int yearsSeconds(int years){
         return 31536000 * years;
     }
+    // The method "yearsSeconds" is public, static and returns an int value. The parameter is an int value called years.
+    // The method body contains code that multiples the int parameter by 3153600, which is the number of seconds in one year.
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
 
+    public static int countArgs(String...args){
+        int count = 0;
 
+        for (String s: args){
+            count++;
+            return count;
+        }
+    }
 
     // variable length arguments:
     // must always be last argument

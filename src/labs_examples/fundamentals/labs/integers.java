@@ -9,7 +9,8 @@ public class integers {
         short minutes; // Declare a short variable named minutes.
         long days; // Declare a long variable named days.
 
-        checking = -20;
+        checking = -20; // Here I am setting the int variable "checking" to -20.
+                        // I had previously declared the int variable for checking above.
         miles = 105;
         minutes = 120;
         days = 189000;
