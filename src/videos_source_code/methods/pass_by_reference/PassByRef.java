@@ -8,8 +8,13 @@ import videos_source_code.classes.Person;
  */
 public class PassByRef {
 
+    // pass by object
+
     public static void main(String[] args) {
         Person ryan = new Person(36, 75, "Ryan");
+        // here an object named ryan was created from the Person class
+        // we had to import this Person class from a different package "classes"
+        // IntelliJ will give hints and auto import and fill
 
         System.out.println(ryan.toString());
 
@@ -22,3 +27,6 @@ public class PassByRef {
         person.age = person.age + 1;
     }
 }
+
+// pass by reference: you pass ints or doubles, it can change
+// it without affecting variables in original method
