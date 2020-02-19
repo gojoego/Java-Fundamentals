@@ -6,6 +6,8 @@ import videos_source_code.access_modifiers.ClassOne;
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
+
+// not in same package so cannot protected
 public class ClassThree {
 
     public static void main(String[] args) {
@@ -18,5 +20,6 @@ public class ClassThree {
         //classOne.protectedVar = 20;
 
         classOne.changePrivateVar(30);
+
     }
 }

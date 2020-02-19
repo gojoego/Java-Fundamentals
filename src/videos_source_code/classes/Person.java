@@ -7,6 +7,7 @@ package videos_source_code.classes;
  *
  * A POJO is a Plain Old Java Object
  */
+
 public class Person {
 
     // instance variables

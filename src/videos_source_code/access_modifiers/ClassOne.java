@@ -3,12 +3,24 @@ package videos_source_code.access_modifiers;
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
+
+// no such thing as private class
 public class ClassOne {
 
     public int publicVar;
-    protected int protectedVar;
-    private int privateVar;
+    // This declares an int variable that is public
+    // can be accessed from anywhere in the application
 
+    protected int protectedVar;
+    // only accessible by other classes or members
+    // of those classes within the same package
+    // can be accessed by sub classes, any classes that extend
+
+    private int privateVar;
+    // Here we declare an int variable that is called privateVar
+    // Because it is private, it can only be accessed within the class
+
+    // public variable from private
     public void changePrivateVar(int val){
         if (val >= 0 && val <= 1000){
             privateVar = val;
