@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
 
+import com.sun.org.apache.bcel.internal.generic.ARRAYLENGTH;
+
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
@@ -39,6 +41,9 @@ public class Exercise_01 {
         int years = 33;
         int seconds = yearsSeconds(years);
         System.out.println("There are " + seconds + " in " + years + " years.");
+
+        arrayLength("San Francisco", "Los Angeles", "New Orleans");
+
     }
 
 
@@ -83,10 +88,15 @@ public class Exercise_01 {
     // 5) Create a varargs method that will return the length of the varargs array passed in
 
 
+    public static void arrayLength (String...args){
 
+        for (String word: args){
+            System.out.println(word.length());
+        }
 
     }
 
+    }
 
     // overloading method leading toward redundancy
     // variable length arguments or var args: useful if not sure how many inputs
