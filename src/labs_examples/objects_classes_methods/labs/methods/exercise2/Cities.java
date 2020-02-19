@@ -2,35 +2,68 @@ package labs_examples.objects_classes_methods.labs.methods.exercise2;
 
 public class Cities {
 
-    String name;
-    double population;
+    private String largest;
+    private String secLargest;
+    private String thirdLargest;
+    private String fourthLargest;
+    private String fifthLargest;
 
-    public Cities(String name, double population) {
-        this.name = name;
-        this.population = population;
+    public Cities(String largest, String secLargest, String thirdLargest, String fourthLargest, String fifthLargest) {
+        this.largest = largest;
+        this.secLargest = secLargest;
+        this.thirdLargest = thirdLargest;
+        this.fourthLargest = fourthLargest;
+        this.fifthLargest = fifthLargest;
     }
 
-    public String getName() {
-        return name;
+    public String getLargest() {
+        return largest;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLargest(String largest) {
+        this.largest = largest;
     }
 
-    public double getPopulation() {
-        return population;
+    public String getSecLargest() {
+        return secLargest;
     }
 
-    public void setPopulation(double population) {
-        this.population = population;
+    public void setSecLargest(String secLargest) {
+        this.secLargest = secLargest;
+    }
+
+    public String getThirdLargest() {
+        return thirdLargest;
+    }
+
+    public void setThirdLargest(String thirdLargest) {
+        this.thirdLargest = thirdLargest;
+    }
+
+    public String getFourthLargest() {
+        return fourthLargest;
+    }
+
+    public void setFourthLargest(String fourthLargest) {
+        this.fourthLargest = fourthLargest;
+    }
+
+    public String getFifthLargest() {
+        return fifthLargest;
+    }
+
+    public void setFifthLargest(String fifthLargest) {
+        this.fifthLargest = fifthLargest;
     }
 
     @Override
     public String toString() {
         return "Cities{" +
-                "name='" + name + '\'' +
-                ", population=" + population +
+                "largest='" + largest + '\'' +
+                ", secLargest='" + secLargest + '\'' +
+                ", thirdLargest='" + thirdLargest + '\'' +
+                ", fourthLargest='" + fourthLargest + '\'' +
+                ", fifthLargest='" + fifthLargest + '\'' +
                 '}';
     }
 }

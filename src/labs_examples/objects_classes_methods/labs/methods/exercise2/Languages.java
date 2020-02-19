@@ -2,8 +2,8 @@ package labs_examples.objects_classes_methods.labs.methods.exercise2;
 
 public class Languages {
 
-    String primary;
-    String secondary;
+    private String primary;
+    private String secondary;
 
     public Languages(String primary, String secondary) {
         this.primary = primary;
