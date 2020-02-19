@@ -24,6 +24,7 @@ public class Exercise_01 {
 
         // assign input to variable as int
         int number = scanner.nextInt();
+        // Here we are assigning
 
         // write completed code here
         if(number % 2 == 0) {

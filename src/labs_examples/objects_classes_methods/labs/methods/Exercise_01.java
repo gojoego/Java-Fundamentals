@@ -91,5 +91,5 @@ public class Exercise_01 {
     // variable length arguments or var args: useful if not sure how many inputs
     // or how many arguments are needed
     // must always be last argument
-    
+
 }
