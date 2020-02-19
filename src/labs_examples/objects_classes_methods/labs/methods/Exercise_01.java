@@ -82,15 +82,8 @@ public class Exercise_01 {
 
     // 5) Create a varargs method that will return the length of the varargs array passed in
 
-    public static String arrayLength (String...args){
 
-        String[] cities = {"SF", "LA", "NOLA"};
 
-        for (String s : args ){
-            ;
-
-        }
-        return count;
 
     }
 
@@ -107,4 +100,4 @@ public class Exercise_01 {
 
 
 
-}
+
