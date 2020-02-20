@@ -15,6 +15,8 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        // creating an int array called array with the
+        // numbers from 10 to 1
 
         // write code here
 

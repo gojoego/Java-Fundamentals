@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
 
+import java.util.ArrayList;
+
 public class MethodTraining {
 
     public static void main(String[] args) {
@@ -15,6 +17,8 @@ public class MethodTraining {
         SlashFigure(20);
 
         checkPrime(5);
+
+        highLow(1,2,3,4);
 
     }
 
@@ -68,6 +72,7 @@ public class MethodTraining {
         }
     }
 
+    // 6. method that will determine whether or not a number is prime
     public static void checkPrime(int num) {
 
         boolean flag = false;
@@ -86,5 +91,43 @@ public class MethodTraining {
         else
             System.out.println(num + " is not a prime number.");
     }
+
+    // 7. method that will return a small array containing the highest and lowest numbers
+    // in a given numeric array, which is passed in as an argument
+
+    public static void highLow (int a, int b, int c, int d){
+
+        int[] array = new int[2];
+        array[0] = a;
+        array[1] = d;
+
+        System.out.println("[" + array[0] + "][" + array[1] + "]");
+
+        // array at index 0 needs to equal first number
+        // array at index [last] needs to equal last number
+    }
+
+    /* 8. method that takes 3 arguments (int maxNum, int divisor1, int divisor2)
+    and returns an Integer Arraylist.
+
+    In this method create an Integer ArrayList and populate it with each
+    number between zero and maxNum that is
+    divisible by both divisor1 and divisor2. Then return this ArrayList.
+    After calling this method, print out the
+    length of the returned list */
+
+    public static void arrayList(int maxNum, int divisor1, int divisor2){
+
+        System.out.println(maxNum);
+    }
+    // initialize an empty ArrayList of type String
+    // ArrayList<String> words = new ArrayList();
+
+    // 9) Write a method that will reverse an array in place use
+    // only one extra temp variable. For this exercise you cannot
+    //instantiate a second array. You must reverse the array in
+    // place using only one extra temp variable. Hint: this
+    // variable is used to temporarily store
+    // individual values in the array
 }
 

@@ -29,8 +29,14 @@ public class Exercise_01 {
         // write completed code here
         if(number % 2 == 0) {
             System.out.println("The given number " + number + " is Even ");
+            // IF a number divided by 2 returns a modulus of 0, it means
+            // that the number was divided by 2 and there was no remainder.
+            // This means that this number is an even number. Only even numbers return
+            // a modulus of zero. By reason, everything else is odd.
         } else {
             System.out.println("The given number " + number + " is Odd ");
+            // For all the other numbers with modulus values of 1, we print the above statement
+            // this is an if-else statement
         }
     }
 }
