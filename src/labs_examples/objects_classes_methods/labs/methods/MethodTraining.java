@@ -116,12 +116,6 @@ public class MethodTraining {
     After calling this method, print out the
     length of the returned list */
 
-    public static int arrayList(int maxNum, int divisor1, int divisor2){
-
-        ArrayList<Integer> intArray = new ArrayList(3);
-
-        System.out.println(intArray);
-    }
 
     /*method takes maxNum, divisor1, divisor2 and retruns ArrayList{
         //step one: take maxNum
