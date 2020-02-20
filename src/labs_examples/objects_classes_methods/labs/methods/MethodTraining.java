@@ -107,21 +107,7 @@ public class MethodTraining {
         // array at index 0 needs to equal first number
         // array at index [last] needs to equal last number
     }
-
-    /* 8. method that takes 3 arguments (int maxNum, int divisor1, int divisor2)
-    and returns an Integer Arraylist.
-    In this method create an Integer ArrayList and populate it with each
-    number between zero and maxNum that is
-    divisible by both divisor1 and divisor2. Then return this ArrayList.
-    After calling this method, print out the
-    length of the returned list */
-
-
-    /*method takes maxNum, divisor1, divisor2 and retruns ArrayList{
-        //step one: take maxNum
-        //step two:
-        //step three
-    }*/
+    
 
     // initialize an empty ArrayList of type String
     // ArrayList<String> words = new ArrayList();

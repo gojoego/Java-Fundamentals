@@ -35,12 +35,13 @@ Create a new class called MethodTraining.java and in this class please do the fo
         divisible by both divisor1 and divisor2. Then return this ArrayList. After calling this method, print out the
         length of the returned list
 
-
+    -code in Exercise3_8
 
     9) Write a method that will reverse an array in place use only one extra temp variable. For this exercise you cannot
         instantiate a second array. You must reverse the array in place using only one extra temp variable. Hint: this
         variable is used to temporarily store individual values in the array
 
+    -code in MethodTraining
 
 pass by value
 - with primitive data types, when you pass to another method, method gets copy of variables

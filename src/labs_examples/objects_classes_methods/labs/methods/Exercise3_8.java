@@ -12,7 +12,7 @@ public class Exercise3_8 {
 
     public static void main(String[] args) {
 
-        modArray(10, 2, 5);
+        modArray(13, 3, 2);
     }
 
     public static int modArray(int maxNum, int divisor1, int divisor2) {
