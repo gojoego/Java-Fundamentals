@@ -21,4 +21,9 @@ public class MethodTraining {
             max = d;
         return max;
     }
+    // 4. write method to count all consonants (the opposite of vowels) in a String
+    public static int countConsonants(String stringToCount){
+
+    }
+
 }

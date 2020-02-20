@@ -15,6 +15,8 @@ Create a new class called MethodTraining.java and in this class please do the fo
 
     4) Write a method to count all consonants (the opposite of vowels) in a String
 
+    -
+
     5) Write a method that will print some kind of ascii art to the console (Google "ascii art" if needed)
 
     6) Write a method that will determine whether or not a number is prime
