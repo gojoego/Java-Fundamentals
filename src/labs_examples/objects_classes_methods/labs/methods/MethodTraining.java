@@ -2,21 +2,23 @@ package labs_examples.objects_classes_methods.labs.methods;
 
 public class MethodTraining {
 
-    // 1. Demonstrate method overloading
-
     public static void main(String[] args) {
 
-        int a = 7;
-        int b = 9;
+        int largest = largestFour(1,2,3,4);
 
-        int sum = a;
-
-
-
-
+        System.out.println(largest);
 
     }
-
-
-
+    // 3. creating a method that will return the largest of 4 numbers
+    // (all of which are passed in as arguments or parameters
+    public static int largestFour(int a, int b, int c, int d){
+        int max = a;
+        if (b > max)
+            max = b;
+        if (c > max)
+            max = c;
+        if (d > max)
+            max = d;
+        return max;
+    }
 }

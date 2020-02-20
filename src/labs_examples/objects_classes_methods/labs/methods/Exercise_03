@@ -7,7 +7,11 @@ Create a new class called MethodTraining.java and in this class please do the fo
 
     2) Demonstrate the difference between "pass by value" and "pass by reference"
 
+
+
     3) Create a method that will return the largest of 4 numbers (all of which are passed in as arguments)
+
+    -code in MethodTraining
 
     4) Write a method to count all consonants (the opposite of vowels) in a String
 
