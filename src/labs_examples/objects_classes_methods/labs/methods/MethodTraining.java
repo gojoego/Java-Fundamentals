@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MethodTraining {
 
@@ -109,17 +110,25 @@ public class MethodTraining {
 
     /* 8. method that takes 3 arguments (int maxNum, int divisor1, int divisor2)
     and returns an Integer Arraylist.
-
     In this method create an Integer ArrayList and populate it with each
     number between zero and maxNum that is
     divisible by both divisor1 and divisor2. Then return this ArrayList.
     After calling this method, print out the
     length of the returned list */
 
-    public static void arrayList(int maxNum, int divisor1, int divisor2){
+    public static int arrayList(int maxNum, int divisor1, int divisor2){
 
-        System.out.println(maxNum);
+        ArrayList<Integer> intArray = new ArrayList(3);
+
+        System.out.println(intArray);
     }
+
+    /*method takes maxNum, divisor1, divisor2 and retruns ArrayList{
+        //step one: take maxNum
+        //step two:
+        //step three
+    }*/
+
     // initialize an empty ArrayList of type String
     // ArrayList<String> words = new ArrayList();
 
@@ -129,5 +138,26 @@ public class MethodTraining {
     // place using only one extra temp variable. Hint: this
     // variable is used to temporarily store
     // individual values in the array
+
+    public static void arrayReverser(int a, int b, int c, int d, int e) {
+
+        // create a simple array
+        int[] arrayToReverse = {a, b, c, d, e};
+
+        // print this array out for comparison
+        System.out.println("array before reverse: " + Arrays.toString(arrayToReverse));
+
+        // reverse array using one extra variable
+        // use for loop
+        for (int outer = 0; outer < arrayToReverse.length/2; outer++){
+            int count = arrayToReverse[outer];
+            arrayToReverse[outer] = arrayToReverse[arrayToReverse.length - outer - 1];
+            arrayToReverse[arrayToReverse.length - outer - 1] = count;
+
+        }
+        System.out.println("array after reverse: " + Arrays.toString(arrayToReverse));
+    }
+
+
 }
 
