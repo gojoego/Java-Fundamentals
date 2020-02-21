@@ -34,4 +34,10 @@ public class Warren extends Senator {
                 ", lawPractice='" + lawPractice + '\'' +
                 '}';
     }
+    public static void candidate(){
+        System.out.println("I hope Elizabeth Warren wins the Democratic nomination.");
+    }
+    public static void debate(){
+        System.out.println("She just slaughtered Bloomberg.");
+    }
 }
