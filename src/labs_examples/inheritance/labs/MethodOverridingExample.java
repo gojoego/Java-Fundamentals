@@ -1,6 +1,6 @@
 package labs_examples.inheritance.labs;
 
-public class MethodOvEx {
+public class MethodOverridingExample {
 
 }
 // parent class Vehicle
