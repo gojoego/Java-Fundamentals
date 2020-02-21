@@ -31,6 +31,7 @@ package labs_examples.inheritance.labs;
  *
  *      5) Add constructors to each class and demonstrate the use of a superclass constructor
  *          from a subclass.
+ *
  *      6) Demonstrate constructor overloading and the use of the "super" keyword.
  *      7) Demonstrate method overloading.
  *

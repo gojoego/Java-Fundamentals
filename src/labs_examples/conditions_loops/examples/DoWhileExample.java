@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.methods;
+package labs_examples.conditions_loops.examples;
 
 /**
  * Created by ryandesmond - https://codingnomads.co
