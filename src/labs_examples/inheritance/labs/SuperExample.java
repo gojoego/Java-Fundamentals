@@ -122,3 +122,55 @@ child class. But within the child class we can refer
 to the printMethod() in the super class using "super"
 and to the printMethod() in the child class using "this".
  */
+
+
+/*
+If you would like to declare a variable that should not be
+changed, for instance the number Pi,
+mark it with final to prevent anyone from changing it.
+ */
+
+class FinalExample {
+    // it is not possible to modify a final variable
+    // ALL CAPS LOCKS for final variable names is common and accepted convention in Java
+    public final double PI = 3.1415926535897932384626433832;
+
+    public double getCircumference(double radius) {
+        return ( 2 * PI * radius);
+    }
+}
+
+/*
+
+Final Methods Prevent Overriding
+If a method is marked as final it prevents any and all subclasses
+from overriding that method. For instance:
+
+ */
+
+class Vehicle2 {
+    int mpg;
+    int fuel_capacity;
+    String type;
+
+    // this method cannot be overridden as it is declared "final"
+    public final void start(){
+        // do steps to start Vehicle
+    }
+}
+
+class Motorcycle3 extends Vehicle2 {
+    int cubicLiters;
+    Motorcycle3(int cubicLiters){
+        mpg = 30;
+        fuel_capacity = 10;
+        type = "Motorcycle";
+        this.cubicLiters = cubicLiters;
+    }
+
+//    // THIS IS ILLEGAL - you cannot override a final method in a parent class
+//    @Override
+//    public final void start(){
+//
+//    }
+}
