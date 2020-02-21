@@ -60,4 +60,9 @@ public class Politician {
     public void career(){
         System.out.println("Most politicians begin their careers in Law.");
     }
+
+    public void definition(){
+        System.out.println("a person who is professionally involved in politics, " +
+                "especially as a holder of or a candidate for an elected office.");
+    }
 }

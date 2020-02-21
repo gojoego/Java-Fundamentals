@@ -54,4 +54,17 @@ public class Senator extends Politician {
         System.out.println("There 100 US Senators, two from each of the 50 states.");
     }
 
+    public void definition(){
+        System.out.println("a member of a senate");
+    }
+
+    public int percentLifeInOffice(int yearsOffice, int age){
+        return yearsOffice/age;
+    }
+    public int averageAge(int age1, int age2, int age3){
+        return (age1 + age2 + age3)/3;
+    }
+    public int averageAge(int age1, int age2) {
+        return (age1 + age2) / 2;
+    }
 }
