@@ -29,11 +29,20 @@ package labs_examples.inheritance.labs;
  *          -completed
  *      4) Demonstrate the use of (non getter and setter) methods in a superclass from a subclass.
  *
+ *          -created warren object and used that to call methods for warren object from Warren class
+ *
  *      5) Add constructors to each class and demonstrate the use of a superclass constructor
  *          from a subclass.
  *
+ *          -created warren object and used constructors originally in Politician class to create object
+ *
  *      6) Demonstrate constructor overloading and the use of the "super" keyword.
+ *
+ *          -demonstrated in Warren class to create constructor from constructors in parent classes
+ *
  *      7) Demonstrate method overloading.
+ *
+ *          -
  *
  *      NOTE: We encourage you to be creative and try to think of an example of your own for this
  *       exercise but if you are stuck, some ideas include:

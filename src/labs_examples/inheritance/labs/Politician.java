@@ -12,6 +12,18 @@ public class Politician {
         this.currentOffice = currentOffice;
     }
 
+    public Politician() {
+    }
+
+    public Politician(String party, int yearsActive){
+        this.party = party;
+        this.yearsActive = yearsActive;
+    }
+
+    public Politician(String party) {
+        this.party = party;
+    }
+
     public String getParty() {
         return party;
     }
@@ -43,5 +55,9 @@ public class Politician {
                 ", yearsActive=" + yearsActive +
                 ", currentOffice='" + currentOffice + '\'' +
                 '}';
+    }
+
+    public void career(){
+        System.out.println("Most politicians begin their careers in Law.");
     }
 }
