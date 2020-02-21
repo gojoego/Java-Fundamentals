@@ -11,10 +11,13 @@ at least once, several times over would be better.
 
 3) Create at least three methods that override a method in one or more parent classes.
 
-4) Create a controller class/method that will create objects of your hierarchy and demonstrate how you use this labs_examples.inheritance
-hierarchy. Demonstrate that your subclasses have set the variables in the parent classes, that you have called the parameterized
+4) Create a controller class/method that will create objects of your hierarchy
+and demonstrate how you use this labs_examples.inheritance
+hierarchy. Demonstrate that your subclasses have set the variables
+in the parent classes, that you have called the parameterized
 super constructors from sub-classes, that you are indeed overriding methods.
 
 
 // creating a java class
 // example: public class className {}
+

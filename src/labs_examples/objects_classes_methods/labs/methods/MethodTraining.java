@@ -107,7 +107,7 @@ public class MethodTraining {
         // array at index 0 needs to equal first number
         // array at index [last] needs to equal last number
     }
-    
+
 
     // initialize an empty ArrayList of type String
     // ArrayList<String> words = new ArrayList();

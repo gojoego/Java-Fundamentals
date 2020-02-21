@@ -6,6 +6,26 @@ package labs_examples.inheritance.labs;
  *      1) Create one super class Class1 and two subclasses Class2 and Class3.
  *          -Class2 should extend Class1.
  *          -Class3 should extend Class2.
+ *
+ *          Class1 = Politician
+ *          String party;
+ *          int yearsActive;
+ *          String currentOffice;
+
+ *          Class2 = Senator
+ *          String state;
+ *          int yearsOffice;
+ *
+ *
+ *          Class3 = Warren
+ *          String careerBeforeLaw;
+ *          String lawPractice;
+ *
+ *
+ *
+ *
+ *
+ *
  *      2) Each class should have at least two instance variable, all private.
  *      3) Create getters and setters for all instance variables and demonstrate setting superclass
  *          variables from a subclass
