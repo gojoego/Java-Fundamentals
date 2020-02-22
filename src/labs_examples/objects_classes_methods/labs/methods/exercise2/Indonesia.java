@@ -65,5 +65,6 @@ public class Indonesia {
                 ", population=" + population +
                 ", religion='" + religion + '\'' +
                 '}';
+        //
     }
 }

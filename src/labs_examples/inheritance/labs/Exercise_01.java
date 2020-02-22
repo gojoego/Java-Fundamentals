@@ -42,7 +42,7 @@ package labs_examples.inheritance.labs;
  *
  *      7) Demonstrate method overloading.
  *
- *          -demonstrated in Politician with averageAge() methods 
+ *          -demonstrated in Politician with averageAge() methods
  *
  *      NOTE: We encourage you to be creative and try to think of an example of your own for this
  *       exercise but if you are stuck, some ideas include:

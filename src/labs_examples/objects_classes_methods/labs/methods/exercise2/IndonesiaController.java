@@ -16,6 +16,8 @@ public class IndonesiaController {
         Indonesia profile = new Indonesia(major_cities, big_islands,major_languages,
                 264000000.00, "Muslim");
 
+        // object composition- compose
+
         System.out.println("The capital of Indonesia is " +
                 profile.major_cities.getLargest() + ". It is an archipelago " +
                 "consisting of over 17,000 islands, with the two largest islands being "
@@ -23,7 +25,7 @@ public class IndonesiaController {
                 + profile.biggest_islands.getSecBiggest() + ". The primary " +
                 "language is " + major_languages.getPrimary() + " and the " +
                 "primary religion is " + profile.getReligion() + ".");
-
+        System.out.println(profile.toString());
     }
 
 }

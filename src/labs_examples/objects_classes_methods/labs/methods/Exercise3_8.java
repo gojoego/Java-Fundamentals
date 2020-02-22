@@ -20,7 +20,7 @@ public class Exercise3_8 {
 
         int arraySize = finArray.size();
 
-        for (int i = 0; i < maxNum; i++) {
+        for (int i = 1; i < maxNum; i++) {
             if (i % divisor1 == 0 && i % divisor2 == 0) {
                 finArray.add(i);
             }

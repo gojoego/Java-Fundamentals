@@ -3,7 +3,8 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 /**
  * Why does the output print in the order it does?
  *
- * You answer:
+ * You answer: even the object was created in class C_1, it extends back to B_1, which extends to A_1,
+ * so code will be ran starting with the highest parent
  *
  */
 
@@ -33,4 +34,6 @@ public class Exercise_03 {
     {
         C_1 c = new C_1();
     }
+    // creating object c of the C_1 class
+    // since there is no parameters
 }

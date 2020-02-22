@@ -1,5 +1,10 @@
 package labs_examples.objects_classes_methods.labs.methods.exercise2;
+/*
 
+This is my POJO for Cities in Indonesia. I'm declaring 5 private String variables and have
+included their corresponding constructors and getters and setters and the toString.
+
+ */
 public class Cities {
 
     private String largest;

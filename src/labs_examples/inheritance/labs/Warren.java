@@ -53,6 +53,7 @@ public class Warren extends Senator {
     public void career() {
         super.career();
     }
+    // corresponding keyword to "this"
 
     public void definition(){
         System.out.println("slaughterer of Bloomberg");
