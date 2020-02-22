@@ -17,7 +17,7 @@ public class MethodTraining {
 
         SlashFigure(20);
 
-        checkPrime(5);
+        checkPrime(65);
 
         highLow(1,2,3,4);
 
@@ -82,15 +82,12 @@ public class MethodTraining {
 
             if(num % i == 0)
             {
-                flag = true;
-                break;
+                System.out.println("not prime");;
+                return;
             }
         }
 
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
+        System.out.println("prime");
     }
 
     // 7. method that will return a small array containing the highest and lowest numbers
