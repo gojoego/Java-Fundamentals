@@ -12,6 +12,10 @@ public class Book {
         this.author = author;
     }
 
+    public void getTitle(String title) {
+        System.out.println("The title of this book is " + title + ".");
+    }
+
     public int getPages() {
         return pages;
     }

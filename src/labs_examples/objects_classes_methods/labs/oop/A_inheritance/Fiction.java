@@ -18,6 +18,10 @@ public class Fiction extends Book {
         this.antagonist = antagonist;
     }
 
+    public void subGenre(String subgenre){
+        System.out.println("a subgenre of " + getClass() + " is " + subgenre);
+    }
+
     public String getProtagonist() {
         return protagonist;
     }

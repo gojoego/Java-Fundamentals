@@ -29,6 +29,10 @@ public class GraphicNovel extends Fiction {
         this.issues = issues;
     }
 
+    public void subGenre(String subgenre){
+        System.out.println("a subgenre of " + getClass() + " is " + subgenre);
+    }
+
     public String getIllustrator() {
         return illustrator;
     }
