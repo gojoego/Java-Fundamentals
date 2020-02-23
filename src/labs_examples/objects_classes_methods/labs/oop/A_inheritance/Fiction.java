@@ -22,6 +22,11 @@ public class Fiction extends Book {
         System.out.println("a subgenre of " + getClass() + " is " + subgenre);
     }
 
+    public void audience(String audience){
+        System.out.println("The targeted age group for readers in this category is " + audience);
+
+    }
+
     public String getProtagonist() {
         return protagonist;
     }

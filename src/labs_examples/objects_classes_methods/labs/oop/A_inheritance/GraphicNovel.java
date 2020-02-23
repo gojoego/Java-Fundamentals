@@ -34,6 +34,12 @@ public class GraphicNovel extends Fiction {
         System.out.println("a subgenre of " + getClass() + " is " + subgenre);
     }
 
+    @Override
+    public void audience(String audience){
+        System.out.println("The targeted age group for readers in this category is " + audience);
+
+    }
+
     public String getIllustrator() {
         return illustrator;
     }
