@@ -1,6 +1,8 @@
 package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 
-public class Book {
+import labs_examples.objects_classes_methods.labs.oop.B_polymorphism.PrintMedia;
+
+public class Book implements PrintMedia {
 
     int pages;
     String author;
@@ -38,5 +40,20 @@ public class Book {
                 "pages=" + pages +
                 ", author='" + author + '\'' +
                 '}';
+    }
+
+    @Override
+    public void publish() {
+
+    }
+
+    @Override
+    public void distribute() {
+
+    }
+
+    @Override
+    public void rightsToFilm() {
+
     }
 }
