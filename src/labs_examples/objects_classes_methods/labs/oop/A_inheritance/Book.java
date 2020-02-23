@@ -5,6 +5,8 @@ public class Book {
     int pages;
     String author;
 
+    public Book(){}
+
     public Book(int pages, String author) {
         this.pages = pages;
         this.author = author;
