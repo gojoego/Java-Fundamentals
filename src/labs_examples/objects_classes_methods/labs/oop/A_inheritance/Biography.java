@@ -5,6 +5,12 @@ public class Biography extends NonFiction {
     int yearsCovered;
     String subject;
 
+    public Biography(String author, String topic, String subject){
+        super.author = author;
+        super.topic = topic;
+        this.subject = subject;
+    }
+
     public Biography(int yearsCovered, String subject) {
         this.yearsCovered = yearsCovered;
         this.subject = subject;

@@ -5,6 +5,13 @@ public class GraphicNovel extends Fiction {
     String illustrator;
     int issues;
 
+    public GraphicNovel(int pages, String author, String illustrator, int issues){
+        super.pages = pages;
+        super.author = author;
+        this.illustrator = illustrator;
+        this.issues = issues;
+    }
+
     public GraphicNovel(String illustrator, int issues) {
         this.illustrator = illustrator;
         this.issues = issues;
