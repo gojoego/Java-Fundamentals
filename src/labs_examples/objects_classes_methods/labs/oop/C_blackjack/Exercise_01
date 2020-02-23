@@ -26,6 +26,10 @@ It will not ask for bets. The user and the computer will each start with a small
         ArrayList<Card> cards;
         int handValue;
 
+        COMPLETED
+
 
 2) Fill out each POJO above to the best of your ability.
 Also create a main() method in the BlackJackController class.
+
+COMPLETED
