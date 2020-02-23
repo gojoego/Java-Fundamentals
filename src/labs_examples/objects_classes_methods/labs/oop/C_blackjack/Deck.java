@@ -38,4 +38,28 @@ public class Deck {
                 ", usedCards=" + usedCards +
                 '}';
     }
+/*
+    1) In the Deck.java class, create a method that will populate the Card[] with 52 unique Card object. The cards
+    should mimic an actual card deck. It should contain four aces (spades, hearts, diamonds, clubs), four 2's
+            (spades, hearts, diamonds, clubs), four 3's (spades, hearts, diamonds, clubs), ... up through Jacks, Queens and Kings
+    */
+
+    // method that will populate Card[] with 52 unique card objects
+    // 4 of aces, 4 2's, 4 3's... 4 Jacks, 4 Queens, and 4 Kings
+    // use for loop or for each loop to populate array
+    // initial count = 0
+    // ArrayList arrayListName = new ArrayList;
+    public static void populateCard(){
+        ArrayList<Character> card[][] = new ArrayList[52][4];
+        char[] suit = new char[]{'♠', '♦', '♥', '♣'};
+
+        // need ArrayList that is 52 x 4
+        for (int x = 0; x < 53; x++){
+            card[x][0] = '♠';
+            card[x][1] =
+            }
+        }
+
+    }
+
 }
