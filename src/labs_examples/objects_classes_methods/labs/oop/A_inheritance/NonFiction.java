@@ -19,6 +19,10 @@ public class NonFiction extends Book {
         this.topic = topic;
     }
 
+    public int numSources(int numSources){
+        return numSources;
+    }
+
     public int getSources() {
         return sources;
     }

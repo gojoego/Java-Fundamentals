@@ -29,6 +29,7 @@ public class GraphicNovel extends Fiction {
         this.issues = issues;
     }
 
+    @Override
     public void subGenre(String subgenre){
         System.out.println("a subgenre of " + getClass() + " is " + subgenre);
     }

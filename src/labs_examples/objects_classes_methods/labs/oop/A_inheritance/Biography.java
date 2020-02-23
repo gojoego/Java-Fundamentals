@@ -28,6 +28,11 @@ public class Biography extends NonFiction {
         this.subject = subject;
     }
 
+    @Override
+    public int numSources(int numSources){
+        return numSources;
+    }
+
     public int getYearsCovered() {
         return yearsCovered;
     }
