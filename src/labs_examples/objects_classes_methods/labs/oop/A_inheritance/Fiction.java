@@ -5,6 +5,8 @@ public class Fiction extends Book {
     String protagonist;
     String antagonist;
 
+    public Fiction() { }
+
     public Fiction(String protagonist, String antagonist) {
         this.protagonist = protagonist;
         this.antagonist = antagonist;
