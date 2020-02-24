@@ -50,16 +50,17 @@ public class Deck {
     // initial count = 0
     // ArrayList arrayListName = new ArrayList;
     public static void populateCard(){
-        ArrayList<Character> card[][] = new ArrayList[52][4];
+
+        String[] card = new String[52];
+
         char[] suit = new char[]{'♠', '♦', '♥', '♣'};
 
         // need ArrayList that is 52 x 4
         for (int x = 0; x < 53; x++){
-            card[x][0] = '♠';
-            card[x][1] =
+
             }
         }
 
     }
 
-}
+
