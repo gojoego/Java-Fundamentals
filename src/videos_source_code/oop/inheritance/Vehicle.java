@@ -6,12 +6,25 @@ import videos_source_code.oop.polymorphism.MotorizedTransport;
 /**
  * Created by ryandesmond - https://codingnomads.co
  */
+
+// created because Truck and Sedan had 3 variables or traits that they shared
+// took abstracted 3 traits and placed them into a parent class
+// Truck and Sedan now extend Vehicle
+    // example of Inheritance and Abstraction
+// now just need to define what make Truck and Sedan unique
+
 public abstract class Vehicle implements MotorizedTransport {
 
     protected String make;
     protected String model;
     protected double miles;
     public final double PI = 3.1417;
+
+    public Vehicle(){}
+    // default constructor
+    // subclasses can automatically create it
+    // with no default constructor, you cannot invoke
+    // constructors in the subclasses
 
     public Vehicle(String make, String model, double miles) {
         this.make = make;
@@ -28,6 +41,7 @@ public abstract class Vehicle implements MotorizedTransport {
     @Override
     public void accelerate(double mph) {
         System.out.println("accelerating vehicle");
+
 
     }
 

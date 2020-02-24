@@ -18,6 +18,8 @@ public class VarArgsExamples {
     }
 
     public static int countArgs(String... args){
+        // method using varargs
+        // must always be the last argument
         int count = 0;
 
         for(String s : args){

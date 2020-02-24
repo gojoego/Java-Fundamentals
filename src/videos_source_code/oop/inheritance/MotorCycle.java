@@ -17,6 +17,7 @@ public class MotorCycle extends Vehicle {
     public void demonstrateThisSuper(){
         this.accelerate(20);
         super.accelerate(30);
+        // can still refer to both methods
     }
 
     @Override
@@ -29,6 +30,10 @@ public class MotorCycle extends Vehicle {
     public void accelerate(double mph){
         System.out.println("motorcycle accelerating");
         // steps to accelerate a motorcycle
+        // blue symbol to the right indicates override
+        // @Override not required but stops from accidental changes
+        // protects from accidental changes
+        // same method signature
     }
 
     public int getCc() {
