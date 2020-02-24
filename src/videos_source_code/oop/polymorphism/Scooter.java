@@ -4,6 +4,7 @@ package videos_source_code.oop.polymorphism;
  * Created by ryandesmond - https://codingnomads.co
  */
 public class Scooter implements MotorizedTransport {
+    // interface
 
     @Override
     public boolean start() {

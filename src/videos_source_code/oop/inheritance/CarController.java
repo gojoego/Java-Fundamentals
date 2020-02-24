@@ -60,6 +60,8 @@ public class CarController {
         moto.accelerate(100);
         motorScooter.accelerate(20);
 
+        // Vehicle class implements interface as well as the Scooter
+
 
 
     }
