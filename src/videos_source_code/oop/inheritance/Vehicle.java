@@ -16,7 +16,7 @@ import videos_source_code.oop.polymorphism.MotorizedTransport;
 public abstract class Vehicle implements MotorizedTransport {
 
     // by using the "abstract" keyword, you do not have to implement
-    // the abstract methods in the interface 
+    // the abstract methods in the interface
 
     protected String make;
     protected String model;

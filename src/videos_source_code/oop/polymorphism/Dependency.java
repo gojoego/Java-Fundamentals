@@ -6,6 +6,10 @@ package videos_source_code.oop.polymorphism;
 public class Dependency {
 
     MotorizedTransport transport;
+    // using interface as a class
+    // dependency injection
+    // but this is an interface
+    // any class that implements this interface will work as transport variable
 
     public Dependency(MotorizedTransport transport) {
         this.transport = transport;

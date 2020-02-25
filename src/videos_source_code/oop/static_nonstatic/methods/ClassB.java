@@ -8,6 +8,7 @@ public class ClassB {
     public static void staticMethod(){
         System.out.println("Printing ClassB Static Method");
     }
+    // static method
 
     public void nonStaticMethod(){
         System.out.println("Printing ClassB nonStatic Method");

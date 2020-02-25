@@ -8,11 +8,15 @@ public class House {
     int squareFeet;
     String address;
     static int numHousesBuilt;
+    // every object of class has access to same single
+    // unique variable in memory
 
     public House(int squareFeet, String address) {
         this.squareFeet = squareFeet;
         this.address = address;
         numHousesBuilt++;
+        // incrementing every time constructor called
+        // static instance variables are shared
     }
 
     @Override

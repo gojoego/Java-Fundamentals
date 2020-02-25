@@ -27,3 +27,7 @@ public class Scooter implements MotorizedTransport {
         System.out.println("decelerating scooter");
     }
 }
+
+
+// overloading, overriding, and using interfaces as dependencies - polymorphism
+// interfaces - 3 diff classes, call same methods, act in slightly diff ways
