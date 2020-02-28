@@ -2,6 +2,8 @@ package labs_examples.packages.vegetables;
 
 public class Kale {
 
+    protected String healthBenefits;
+
     protected static void kaleRecipe(String recipe){
         System.out.println("I like to put kale in " + recipe);
     }
@@ -10,4 +12,14 @@ public class Kale {
 
     }
 
+    public Kale() {
+        kaleIntake(3);
+        kaleRecipe("Salad");
+    }
+
+    public Kale(String healthBenefits) {
+        this.healthBenefits = healthBenefits;
+        System.out.println("health benefit of kale: " +healthBenefits);
+    }
 }
+
