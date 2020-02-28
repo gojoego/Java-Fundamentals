@@ -12,14 +12,12 @@ public class NotesFromDocs2 {
         }
     }
 
-
     // methodOne will immediately throw any exceptions that occur to the main()
     public static void methodOne() throws ArrayIndexOutOfBoundsException {
         // methodTwo throws an Exception - we're not going to catch it here
         // we're going to pass it up to the main() method to handle it as needed
         methodTwo();
     }
-
 
     public static void methodTwo() throws ArrayIndexOutOfBoundsException {
         int[] nums = {1, 2, 3};
