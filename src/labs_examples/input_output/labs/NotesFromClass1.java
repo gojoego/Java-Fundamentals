@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 // example class demonstrating simple Byte Stream IO to copy a file from one location to another
-public class NotesFromClass {
+public class NotesFromClass1 {
     public static void main(String[] args) throws IOException {
 
         // declare Input and Output Streams outside of Try statment so they're
