@@ -1,7 +1,7 @@
 package labs_examples.packages.fruits;
 
 
-import labs_examples.packages.vegetables.Kale;
+import labs_examples.packages.vegetables.*;
 
 public class Kiwi {
 

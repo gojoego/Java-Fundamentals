@@ -21,7 +21,6 @@ class Example {
         // declare FileInputStream and BufferedInputStream outside of the try/catch/finally blocks
         // so they can be accessed and closed in the finally block at the end of code
         // also so you can access in multiple blocks
-        FileInputStream inputStream = null;
         BufferedInputStream bufferedInputStream = null;
 
         // declare path to file you want read
@@ -55,7 +54,6 @@ class Example {
             // there's a possibility that closing these streams can throw an exception
             // we be using the Try-With-Resources shortly to avoid the need for this
             try {
-                inputStream.close();
                 bufferedInputStream.close();
             } catch (IOException ex) {
                 ex.printStackTrace();
