@@ -44,9 +44,8 @@ public class NotesFromClass1 {
             try {
                 for (int count = 0; count < 10; count++) {
                     /* put this thread to sleep for 400 milliseconds */
-                    Thread.sleep(400);
-                    System.out.println("In " + thread.getName() +
-                            ", count is " + count);
+                    Thread.sleep(100);
+                    System.out.println("Hello MultiThreading!" );
                 }
             }
             /* catch the potential exception */ catch (InterruptedException exc) {
