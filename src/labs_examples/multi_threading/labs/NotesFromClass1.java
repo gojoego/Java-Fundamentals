@@ -58,4 +58,5 @@ public class NotesFromClass1 {
 }
 
 
-//
+// have to invoke start method
+// putting thread.start() in constructor for convenience
