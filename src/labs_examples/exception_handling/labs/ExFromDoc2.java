@@ -48,3 +48,22 @@ class Wine {
     }
 }
 
+
+class OutofBounds
+{
+    public static void main(String args[]) {
+        int[] numArray = {1981, 1983, 1985, 1987};
+
+        try{
+            System.out.println(numArray[6]);
+        }
+        catch(ArrayIndexOutOfBoundsException exc){
+            System.out.println("this index does not exist");
+        }
+        finally{
+            System.out.println("finally block");
+        }
+        System.out.println("done with try-catch-finally");
+    }
+}
+
