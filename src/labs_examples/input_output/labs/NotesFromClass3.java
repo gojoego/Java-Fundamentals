@@ -4,8 +4,11 @@ public class NotesFromClass3 {
         public static void main(String args[]) {
             System.out.println("** Main Thread Start **");
             MyFirstThread thread1 = new MyFirstThread("First Thread");
+            thread1.setPriority(1);
             MyFirstThread thread2 = new MyFirstThread("Second Thread");
+            thread2.setPriority(5);
             MyFirstThread thread3 = new MyFirstThread("Third Thread");
+            thread3.setPriority(10);
             // notice when the next line prints
             System.out.println("** Main Thread End **");
         }
