@@ -10,18 +10,41 @@ package labs_examples.multi_threading.labs;
  *
  */
 
-public class Exercise_01 {
+class Exercise_01 {
     public static void main(String[] args) {
+        System.out.println("disease outbreak");
+        Coronavirus contagious1 = new Coronavirus("By boat");
+        Coronavirus contagious2 = new Coronavirus("By airplane");
+        Coronavirus contagious3 = new Coronavirus("By foot");
+        System.out.println("disease contained");
+
+        contagious1.thread.getName();
+        contagious2.thread.getName();
+        contagious3.thread.getName();
 
     }
 }
 
-class MyFirstRunnable implements Runnable {
+class Coronavirus implements Runnable {
 
     Thread thread;
 
+    public Coronavirus(String transport) {
+        thread = new Thread(this, transport);
+        thread.start();
+    }
+
     @Override
     public void run() {
-
+        System.out.println(thread.getName() + " is how it is spreading.");
+        try {
+            for (int count = 0; count < 5; count++) {
+                Thread.sleep(1000,1000);
+                System.out.println("The coronavirus is spreading" );
+            }
+        } catch (InterruptedException exc) {
+            System.out.println(thread.getName() + " is how it is spreading");
+        }
+        System.out.println(thread.getName() + " is how it is spreading");
     }
 }
