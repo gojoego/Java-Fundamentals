@@ -14,9 +14,12 @@ class Exercise_01 {
     public static void main(String[] args) {
         System.out.println("disease outbreak");
         Coronavirus contagious1 = new Coronavirus("By boat");
+        contagious1.thread.setPriority(10);
         Coronavirus contagious2 = new Coronavirus("By airplane");
+        contagious2.thread.setPriority(5);
         Coronavirus contagious3 = new Coronavirus("By foot");
         System.out.println("disease contained");
+        contagious3.thread.setPriority(1);
 
         contagious1.thread.getName();
         contagious2.thread.getName();
