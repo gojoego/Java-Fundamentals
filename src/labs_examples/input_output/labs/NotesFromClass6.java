@@ -4,7 +4,7 @@ import java.util.*;
 
 // A Java program to demonstrate working with "synchronized".
 // A Class used to send a message
-class Sender {
+/*class Sender {
     public void send(String msg) {
         System.out.println("Sending\t" + msg );
         try {
@@ -15,7 +15,20 @@ class Sender {
         System.out.println("\n" + msg + "Sent");
     }
 }
+*/
 
+// An alternate implementation to demonstrate // that we can use synchronized with method also.
+class Sender {
+    public synchronized void send(String msg) {
+        System.out.println("Sending\t" + msg );
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e) {
+            System.out.println("Thread interrupted.");
+        }
+        System.out.println("\n" + msg + "Sent");
+    }
+}
 
 // Class for send a message using Threads
 class ThreadedSend extends Thread {
