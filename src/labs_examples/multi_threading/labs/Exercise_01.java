@@ -10,4 +10,18 @@ package labs_examples.multi_threading.labs;
  *
  */
 
+public class Exercise_01 {
+    public static void main(String[] args) {
 
+    }
+}
+
+class MyFirstRunnable implements Runnable {
+
+    Thread thread;
+
+    @Override
+    public void run() {
+
+    }
+}
