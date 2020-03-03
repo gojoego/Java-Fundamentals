@@ -13,6 +13,7 @@ public class InputOutputExamples {
         //demonstrateBufferedInputStream();
         //demonstrateCharacterStream();
 
+        // for each loop that prints out every line of the ArrayList
         ArrayList<Person> people = demonstrateBufferedCharacterStream();
             for (Person p : people) {
                 System.out.println(p.toString());
