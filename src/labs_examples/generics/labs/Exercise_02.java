@@ -14,11 +14,14 @@ public class Exercise_02{
 
 class SumArray{
 
-    public <T> void printArray(T[] array){
-        for (T element: array){
-            // add code for sum of array values
-            System.out.println(element);
+    public static void main(String[] args) {
+
+    }
+    int sum;
+    int[] array = {3, 4, 5, 15, 0, 12};
+
+    protected <Integer> void printArray(Integer[] array){
+
         }
     }
 
-}
