@@ -9,3 +9,5 @@ package labs_examples.multi_threading.labs;
  *      then thread2 will print "4" and so on.
  */
 
+
+// COMPLETED in labs_examples/testing/coronavirus/ExtendsVirus
