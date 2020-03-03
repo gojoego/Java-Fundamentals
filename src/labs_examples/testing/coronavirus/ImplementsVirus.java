@@ -14,7 +14,7 @@ public class ImplementsVirus implements Runnable {
     Thread thread;
 
     public ImplementsVirus(String name) {
-        thread = new Thread(name);
+        thread = new Thread(this, name);
         thread.start();
     }
 
@@ -37,7 +37,7 @@ class ImplementsVirus2 implements Runnable {
     Thread thread;
 
     public ImplementsVirus2(String name) {
-        thread = new Thread(name);
+        thread = new Thread(this, name);
         thread.start();
     }
     @Override
@@ -58,19 +58,13 @@ class ImplementsVirus2 implements Runnable {
 
 class ImplementsVirus3 implements Runnable {
 
-    Thread thread;
-
-    public ImplementsVirus3(String name) {
-        thread = new Thread(name);
-    }
-
     @Override
     public void run() {
 
         try{
             for (int y = 0; y < 100; y++){
                 Thread.sleep(10);
-                System.out.println("COVID19 is dispersing via " + thread.getName());
+                System.out.println("COVID19 is dispersing");
             }
         } catch (InterruptedException exc){
             System.out.println("vaccine found");

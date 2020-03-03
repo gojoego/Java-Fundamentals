@@ -18,7 +18,7 @@ public class ExtendsVirus extends Thread {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
-                System.out.println("outbreak contained");
+                System.out.println("outbreak contained" );
                 ;
             }
         }
