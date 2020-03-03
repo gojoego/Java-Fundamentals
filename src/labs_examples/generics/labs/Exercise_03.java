@@ -16,7 +16,7 @@ import java.util.Collection;
  *
  *      4) Write a generic method to find the largest element within the range (begin, end) of a list.
  *
- *      5)
+ *
  */
 
 public class Exercise_03 {

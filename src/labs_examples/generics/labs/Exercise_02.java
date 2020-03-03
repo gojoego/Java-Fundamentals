@@ -7,3 +7,18 @@ package labs_examples.generics.labs;
  *      of any Numeric type and returns the sum of all
  *      Numbers in the ArrayList
  */
+
+public class Exercise_02{
+
+}
+
+class SumArray{
+
+    public <T> void printArray(T[] array){
+        for (T element: array){
+            // add code for sum of array values
+            System.out.println(element);
+        }
+    }
+
+}
