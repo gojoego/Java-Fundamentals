@@ -13,7 +13,8 @@ public class MyNewThread extends Thread {
     public void run(){
 
         for (int i = 0; i < 5; i ++)
-        System.out.println(i + " - I'm in " + super.getName());
+        System.out.println("In " + getName() +
+                ", the count is " + i);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e){
