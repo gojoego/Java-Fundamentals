@@ -1,68 +1,53 @@
 package labs_examples.generics.labs;
 
+import com.sun.tools.javah.Gen;
+
 /**
  * Generics Exercise 1:
  *
- *      1.) Write a generic class with at least two instance variables,
- *      a constructor, and getter and setter methods.
- *      2.) Create a few objects of your generic class with different
- *      data types to demonstrate it's
+ *      1.) Write a generic class with:
+ *          at least two instance variables,
+ *          a constructor,
+ *          and getter and setter methods.
+ *      2.) Create a few objects of your
+ *          generic class with different
+ *          data types to demonstrate it's
  *          dynamic usage.
  */
 
-class Exercise_01{}
+class Exercise_01{
 
-class Generic<J> {
-    J object;
-
-
-    public Generic(J object) {
-        this.object = object;
+    public static void main(String[] args) {
+        Generic<String, Integer> joe = new Generic("hello", new Integer(7));
+        System.out.println(joe.getObject1());
+        System.out.println(joe.getObject2());
     }
 
-    // Return ob.
-    J getobject() {
-        return object;
-    }
-
-    // Show type of T.
-    void showType() {
-        System.out.println("Type of J is " +
-                object.getClass().getName());
-    }
 }
 
-// Demonstrate the generic class.
-class GenericDemo {
-    public static void main(String args[]) {
+class Generic<J,G> {
 
-        labs_examples.generics.labs.Generic<Integer> iOb;
+    J object1;
+    G object2;
 
-        // Create a Gen<Integer> object and assign its
-        // reference to iOb.  Notice the use of autoboxing
-        // to encapsulate the value 88 within an Integer object.
+    public Generic(J object1, G object2) {
+        this.object1 = object1;
+        this.object2 = object2;
+    }
 
-        iOb = new labs_examples.generics.labs.Generic<Integer>(100);
+    public J getObject1() {
+        return object1;
+    }
 
-        // Show the type of data used by iOb.
-        iOb.showType();
+    public void setObject1(J object1) {
+        this.object1 = object1;
+    }
 
-        // Get the value in iOb. Notice that
-        // no cast is needed.
-        int v = iOb.getobject();
-        System.out.println("value: " + v);
+    public G getObject2() {
+        return object2;
+    }
 
-        System.out.println();
-
-        // Create a Gen object for Strings.
-        labs_examples.generics.labs.Generic<String> strOb = new labs_examples.generics.labs.Generic<String>("Generics Test");
-
-        // Show the type of data used by strOb.
-        strOb.showType();
-
-        // Get the value of strOb. Again, notice
-        // that no cast is needed.
-        String str = strOb.getobject();
-        System.out.println("value: " + str);
+    public void setObject2(G object2) {
+        this.object2 = object2;
     }
 }
