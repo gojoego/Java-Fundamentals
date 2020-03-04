@@ -2,6 +2,7 @@ package labs_examples.exception_handling.labs;
 
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -15,7 +16,7 @@ import java.util.Scanner;
 public class Exercise_06 {
 
 
-    static void enoughDelegates() throws IOException {
+    static void enoughDelegates() throws InputMismatchException {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -24,12 +25,10 @@ public class Exercise_06 {
         int delegates = scanner.nextInt();
 
         System.out.println("Thank you for voting.");
-        if (delegates < 1991) {
+        if (delegates > 1991) {
             System.out.println("Bernie wins.");
         } else {
-            System.out.println("We now have a brokered election which will most " +
-                    "likely result in a loss for the Democrats if Bernie is refused " +
-                    "after winning the most votes.");
+            System.out.println("Bernie loses.");
         }
 
     }
@@ -39,9 +38,8 @@ public class Exercise_06 {
 
         try {
             enoughDelegates();
-        }catch (IOException exc){
-            System.out.println("Bernie Sanders does not have enough " +
-                    "delegates to win the Democratic nomination.");
+        }catch (InputMismatchException exc){
+            System.out.println("You did not input a number.");
         }
 
     }
