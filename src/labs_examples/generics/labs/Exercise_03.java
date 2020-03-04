@@ -5,7 +5,9 @@ package labs_examples.generics.labs;
  *
  *      1) Write a generic method that accepts two generic arguments.
  *         This generic method should only accept arguments which are
- *         subclasses of Number. The generic method must return the sum
+ *         subclasses of Number.
+ *         -extends Number
+ *         The generic method must return the sum
  *         (as a double) of whatever two numbers were passed in
  *         regardless of their type.
  *
@@ -27,9 +29,34 @@ public class Exercise_03 {
     }
 
 
-    public <T extends Number> void sum(T a, T b){
-
-    }
-
 
 }
+
+class numberOne {
+
+    public <T extends Number> double sum (T a, T b){
+        return a.doubleValue() + b.doubleValue();
+    }
+
+}
+
+class numberTwo {
+
+    public <T> boolean palindrome(T[] word){
+        int i1 = 0;
+        int i2 = word.length - 1;
+        while (i2 > i1){
+            if (word[i1] != word[i2]){
+                return false;
+            }
+            ++i1;
+            --i2;
+        }
+        return true;
+    }
+
+}
+
+class numberThree {}
+
+class numberFour {}
