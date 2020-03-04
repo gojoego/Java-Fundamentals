@@ -1,5 +1,7 @@
 package labs_examples.generics.labs;
 
+import java.util.List;
+
 /**
  * Generics Exercise 3:
  *
@@ -57,6 +59,26 @@ class numberTwo {
 
 }
 
-class numberThree {}
+class numberThree {
 
-class numberFour {}
+    public  <T> void swap (T[] a, int i, int j) {
+        T t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+    }
+
+}
+
+class numberFour {
+
+    public  <T extends Comparable> T maximalElement (List<T> list, int from, int to) {
+        T max = list.get(from);
+        for (int i = from + 1; i < to; i++) {
+            T elem1 = list.get(i);
+            if (elem1.compareTo(max) > 0) {
+                max = elem1;
+            }
+        }
+        return max;
+    }
+}
