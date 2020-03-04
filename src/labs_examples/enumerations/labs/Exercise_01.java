@@ -18,7 +18,8 @@ public class Exercise_01 {
         for(ClosestFriends bf : ClosestFriends.values()){
             System.out.println(bf);
         }
-        System.out.println("One of my best friends");
+        System.out.println("I have known my best friend " + ClosestFriends.JUSTIN + " for "
+                + ClosestFriends.JUSTIN.getYearsKnown() + " years.");
     }
 
 }
