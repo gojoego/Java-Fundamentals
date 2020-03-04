@@ -19,10 +19,12 @@ package labs_examples.lambdas.labs;
  *      5)  Demonstrate creating a functional interface with an abstract method that
  *          takes 2 parameters and returns a value
  *
- *      6) Implement the previous functional interface with a lambda expression and use it. Also demonstrate creating
+ *      6)  Implement the previous functional interface with a
+ *          lambda expression and use it. Also demonstrate creating
  *          an anonymous inner class from this interface.
  *
- *      7) Demonstrate the use of at least two built-in functional interfaces from the java.util.function package.
+ *      7)  Demonstrate the use of at least two built-in functional interfaces
+ *          from the java.util.function package.
  *
  *
  *
