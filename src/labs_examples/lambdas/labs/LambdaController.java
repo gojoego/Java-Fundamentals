@@ -1,6 +1,9 @@
 package labs_examples.lambdas.labs;
 
 
+import java.util.function.DoubleBinaryOperator;
+import java.util.function.IntPredicate;
+
 public class LambdaController {
 
     public static void main(String[] args) {
@@ -26,6 +29,25 @@ public class LambdaController {
 
         double f = fd.divide(4,5);
         System.out.println(f);
+
+        DoubleBinaryOperator db = (double q, double w) -> {
+            return q/w;
+        };
+
+        double z = db.applyAsDouble(4,5);
+        System.out.println(z);
+
+        IntPredicate ip = (int aa) ->{
+            if (aa == 10){
+                return true;
+            } else{
+                return false;
+            }
+        };
+
+        boolean bb = ip.test(19);
+        System.out.println(bb);
+
 
     }
 
