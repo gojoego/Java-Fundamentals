@@ -6,9 +6,14 @@ package labs_examples.lambdas.labs;
  *      1)  Demonstrate creating a functional interface with an abstract method
  *          that takes no parameters and returns void
  *
+ *          see FunctionalSum interface
+ *
  *      2)  Implement the previous functional interface with a lambda expression
  *          and use it. Also demonstrate creating
  *          an anonymous inner class from this interface.
+ *
+ *          see AnonInnerClassFuncSum
+ *          see LambdaFunctionalSum
  *
  *      3)  Demonstrate creating a functional interface with an abstract method
  *          that takes 1 parameter and returns a value of the same type as the parameter
