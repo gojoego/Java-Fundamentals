@@ -14,5 +14,8 @@ public class EnumExample {
         Planet pluto = Planet.PLUTO;
         System.out.println("Pluto order from the sun is " + pluto.getOrderFromSun());
 
+        ExerciseClasses todaysWorkout = ExerciseClasses.STRENGTH;
+        System.out.println(todaysWorkout.getName() + " @ " + todaysWorkout.getTime());
+
     }
 }
