@@ -4,7 +4,7 @@ package labs_examples.lambdas.labs;
 import java.util.function.DoubleBinaryOperator;
 import java.util.function.IntPredicate;
 
-public class LambdaController {
+public class LambdaControllerEx1 {
 
     public static void main(String[] args) {
 
