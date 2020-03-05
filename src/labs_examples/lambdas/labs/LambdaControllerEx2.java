@@ -51,7 +51,12 @@ public class LambdaControllerEx2 {
         co.accept("i love ubud.");
 
         //7
-        
+        Predicate<String> p = (String s) -> {
+            return s.length() > 10;
+        };
+
+        boolean pp =p.test("Mississippi");
+        System.out.println(pp);
 
     }
 
