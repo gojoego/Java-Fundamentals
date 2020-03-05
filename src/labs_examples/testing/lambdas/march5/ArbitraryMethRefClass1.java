@@ -2,7 +2,7 @@ package labs_examples.testing.lambdas.march5;
 
 import java.util.Arrays;
 
-public class ArbitraryMethRefClass {
+public class ArbitraryMethRefClass1 {
 
     public static void main(String[] args) {
         // string array of names
