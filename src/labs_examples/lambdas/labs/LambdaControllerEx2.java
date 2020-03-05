@@ -58,6 +58,33 @@ public class LambdaControllerEx2 {
         boolean pp =p.test("Mississippi");
         System.out.println(pp);
 
+        //8
+        LongUnaryOperator luo = (long l) -> {
+            return -l;
+        };
+
+        long ll = luo.applyAsLong(234234);
+        System.out.println(ll);
+
+        //9
+        IntSupplier is = () -> {
+            return 525600;
+        };
+        int ss = is.getAsInt();
+        System.out.println(ss + " minutes");
+
+        //10
+        ToDoubleBiFunction<Integer,Long> td = (Integer i, Long l) -> {
+            return i*i + l*l;
+        };
+        double bif = td.applyAsDouble(23, 991224L);
+        System.out.println(bif);
+
+
+        // mt - extend thread or implement runnable
+        // join() waits
+        // type erasure - generic erased by defined type
+
     }
 
 }
