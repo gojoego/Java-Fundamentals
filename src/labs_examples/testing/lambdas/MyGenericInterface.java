@@ -18,6 +18,14 @@ class GenericLambdaExample{
         int i = obj.modify("77");
         System.out.println(i);
 
+        MyGenericInterface<Character, String> obj2 = (String val) -> {
+            char c = val.charAt(0);
+            return c;
+        };
+
+        char c = obj2.modify("Hello");
+        System.out.println(c);
+
     }
 
 }
