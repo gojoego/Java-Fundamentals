@@ -1,11 +1,11 @@
 package labs_examples.testing.lambdas.march5;
 
-public class InstanceMethRef2 {
+public class InstMethRef {
     public static void main(String[] args) {
 
         Friends justin = new Friends("Justin","Caucasian");
-        Friends madison = new Friends("Madison", "African-American");
-
+        Relationships bestie = justin::intro;
+        bestie.profile();
 
     }
 }
@@ -24,5 +24,10 @@ class Friends{
         + " is " + ethnicity + ".");
     }
 
+}
+
+@FunctionalInterface
+interface Relationships{
+    void profile();
 }
 
