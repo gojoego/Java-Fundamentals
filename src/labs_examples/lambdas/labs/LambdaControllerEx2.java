@@ -1,23 +1,18 @@
 package labs_examples.lambdas.labs;
 
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-import java.util.function.BiPredicate;
-import java.util.function.BinaryOperator;
+import java.util.function.*;
 
 public class LambdaControllerEx2 {
 
     public static void main(String[] args) {
 
         //1
-
         BiConsumer<String,String> bc = (String b, String c) -> {
             System.out.println(b + c);
         };
         bc.accept("jos","eph");
 
         //2
-
         BiFunction <Integer, Integer, Integer> bf = (Integer one, Integer two) -> {
             return one + two;
         };
@@ -26,7 +21,6 @@ public class LambdaControllerEx2 {
         System.out.println(g);
 
         //3
-
         BinaryOperator<Integer> bo = (n1, n2) -> {
             return n1 + n2;
         };
@@ -40,6 +34,24 @@ public class LambdaControllerEx2 {
         boolean cc = bp.test(4,2);
         System.out.println(cc);
 
+        //5
+        BooleanSupplier bs = () -> {
+            return true;
+        };
+
+        int gg = 8, hh = 7;
+        bs = () -> gg > hh;
+        boolean dd = bs.getAsBoolean();
+        System.out.println(dd);
+
+        //6
+        Consumer<String> co = (x) -> {
+            System.out.println(x.toUpperCase());
+        };
+        co.accept("i love ubud.");
+
+        //7
+        
 
     }
 
