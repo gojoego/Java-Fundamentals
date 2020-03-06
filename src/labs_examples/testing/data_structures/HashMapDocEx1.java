@@ -1,5 +1,11 @@
 package labs_examples.testing.data_structures;
 
+// hashmap tells us where index is
+// requires HashMapNode class with generics
+// create CustomHashMap
+    // create HashMapNode array
+    // put (insert), hash get, delete, contains,
+
 
 // HashMap, Iterator, Map, and Set all need to be imported
 
