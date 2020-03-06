@@ -1,11 +1,11 @@
-package labs_examples.testing;
+package labs_examples.testing.data_structures;
 
 // LINKED LIST NODE
 
 public class Node<T> {
 
-    protected T data;
-    protected Node next;
+    T data;
+    Node next;
     private Node previous;
 
     public Node(T data, Node next) {
