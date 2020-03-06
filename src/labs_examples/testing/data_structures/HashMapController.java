@@ -8,11 +8,15 @@ public class HashMapController {
 
         CustHashMap<String, String> firstmap = new CustHashMap<>();
 
-        firstmap.put("Sister", "Diana");
+        firstmap.put("Older Sister", "Diana");
         firstmap.put("Brother", "Nate");
+        firstmap.put("Oldest Sister", "Gia");
 
+        System.out.println(firstmap.get("Older Sister"));
         System.out.println(firstmap.get("Brother"));
-        
+        System.out.println(firstmap.get("Oldest Sister"));
+
+
 
     }
 

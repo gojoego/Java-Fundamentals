@@ -1,5 +1,6 @@
 package labs_examples.testing.data_structures;
 
+
 public class CustHashMap<K, V> {
 
     HashMapNode[] map = new HashMapNode[10];
@@ -14,18 +15,62 @@ public class CustHashMap<K, V> {
 
     public void put(K key, V value) {
         int index = hash(key);
-        map[index] = new HashMapNode(key, value);
+
+        // no element at the given index, means no collision
+        // go ahead and simply add the value to the array
+        if (map[index] == null) {
+            map[index] = new HashMapNode(key, value);
+            return;
+        } else {
+            // otherwise, there was a collision
+            // we need iterate through the linked list at that index
+            HashMapNode node = map[index];
+
+            // traverse the linked list
+            while (node.getNext() != null) {
+                node = node.getNext();
+            }
+
+            // after we exit the while loop above, we'll be at the end of the linked list
+            // this is where we can add the new Entry
+            node.setNext(new HashMapNode(key, value));
+        }
+
     }
 
     public V get(K key) {
         int index = hash(key);
-        return (V) map[index];
+        if (map[index] == null) {
+            return null;
+        }
+
+        HashMapNode<K, V> test = map[index];
+
+        while (test.getKey() != key) {
+
+            if (test.getNext() == null) {
+                return null;
+            }
+            test = test.getNext();
+        }
+
+        return test.getValue();
     }
 
     public void remove(K key) {
         int index = hash(key);
-        if (map[index].getKey().equals(key)) {
+        if (get(key) == null) {
+            return;
+        }
+        HashMapNode<K, V> test = map[index];
+
+        if (test.getKey().equals(key)) {
             map[index] = null;
+        }
+        while (test.getNext() != null){
+            if (test.getNext().getKey() != key){
+                test = test.getNext();
+            }
         }
     }
 
