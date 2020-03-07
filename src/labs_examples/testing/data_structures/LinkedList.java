@@ -1,8 +1,6 @@
 package labs_examples.testing.data_structures;
 
 
-import labs_examples.testing.data_structures.Node;
-
 public class LinkedList<T> {
 
     Node<T> head;
@@ -40,7 +38,8 @@ public class LinkedList<T> {
         }
 
 
-    }
+
+}
 
 
 
