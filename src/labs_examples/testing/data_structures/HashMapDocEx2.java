@@ -14,13 +14,13 @@ public class HashMapDocEx2 {
         words.add("Cool!");
 
         // push elements onto the top (front) of the list;
-        words.push("Linked");
-        words.push("Lists");
+        words.push();
+        words.push();
 
 
         // pop elements of the "top" of the List
-        System.out.print(words.pop() + " ");
-        System.out.print(words.pop() + " ");
+        System.out.print("");
+        System.out.print("");
 
         // get elements by index
         System.out.print(words.get() + " ");
@@ -52,7 +52,7 @@ public class HashMapDocEx2 {
         System.out.println();
 
         // iterate through the list backwards
-        iter = words.descendingIterator();
+        words.descendingIterator();
         while(iter.hasNext()){
             System.out.print(iter.next());
         }
@@ -80,6 +80,6 @@ public class HashMapDocEx2 {
         // explore your options to see what else you can do!
     }
 
-    
+
 }
 

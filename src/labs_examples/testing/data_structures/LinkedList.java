@@ -1,6 +1,8 @@
 package labs_examples.testing.data_structures;
 
 
+import java.util.Iterator;
+
 public class LinkedList<T> {
 
     Node<T> head;
@@ -38,7 +40,18 @@ public class LinkedList<T> {
         }
 
 
+    public void push() {
+    }
 
+    public void pop() {
+    }
+
+    public Iterator iterator() {
+        return null;
+    }
+
+    public void descendingIterator() {
+    }
 }
 
 
