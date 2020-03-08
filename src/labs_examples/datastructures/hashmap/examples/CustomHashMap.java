@@ -124,7 +124,8 @@ public class CustomHashMap<K, V> {
 
         // otherwise, if the next element in the linked list is not null
         while (entry.next != null ) {
-            // if the key of the next element in the linked list is not the key we're looking for
+            // if the key of the next element in the linked list
+            // is not the key we're looking for
             if (entry.next.getKey() != key) {
                 // traverse the linked list to the next node
                 entry = entry.next;
