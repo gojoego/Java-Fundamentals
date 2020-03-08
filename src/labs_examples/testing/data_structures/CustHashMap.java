@@ -5,7 +5,6 @@ public class CustHashMap<K, V> {
 
     HashMapNode[] map = new HashMapNode[10];
 
-
     public int hash(K key) {
         int hashcode = key.hashCode();
         int index = Math.abs(hashcode % map.length);
