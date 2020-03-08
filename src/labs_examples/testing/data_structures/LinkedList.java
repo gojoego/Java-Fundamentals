@@ -5,43 +5,52 @@ import java.util.Iterator;
 
 public class LinkedList<T> {
 
-    Node<T> head;
+    Node head;
 
-    public LinkedList(){}
+    public LinkedList() {
+    }
 
     public LinkedList(Node<T> head) {
         this.head = head;
     }
 
     // ADD Method
-    public void add(T data){
+    public void add(T data) {
         Node n = new Node(data);
         n.next = head;
         head = n;
     }
 
     // GET (PEEK) Method
-    public T get(){
-        return head.getData();
+    public T get() {
+        return (T) head.getData();
     }
 
     // REMOVE
-    public void remove(T data){
+    public void remove(T data) {
 
         Node cursor = head;
-        if (cursor.getData() == data){
+        if (cursor.getData() == data) {
             head = cursor.next;
         }
-        while(cursor.next != null){
-            if (cursor.next.getData()==data){
+        while (cursor.next != null) {
+            if (cursor.next.getData() == data) {
             }
         }
 
-        }
-
-
-    public void push() {
     }
+
+
+    public void push(Object data) {
+        if (isEmpty()) {
+            head = new Node(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+    }
+
 
     public void pop() {
     }
@@ -68,6 +77,14 @@ public class LinkedList<T> {
 
     public void clear() {
     }
+
+    public boolean isEmpty() {
+        if (null == head) {
+            return true;
+        }
+        return false;
+    }
+
 }
 
 

@@ -14,8 +14,9 @@ public class HashMapDocEx2 {
         words.add("Cool!");
 
         // push elements onto the top (front) of the list;
-        words.push();
-        words.push();
+        Object data = null;
+        words.push(null);
+        words.push(null);
 
 
         // pop elements of the "top" of the List

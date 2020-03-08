@@ -1,12 +1,17 @@
 package labs_examples.testing.data_structures;
 
 
+import java.util.HashMap;
 
 public class HashMapController {
 
     public static void main(String[] args) {
 
         CustHashMap<String, String> firstmap = new CustHashMap<>();
+        HashMap<String, Integer> f = new HashMap<>();
+        f.put("p", 1);
+        f.containsKey("p");
+        f.isEmpty();
 
         firstmap.put("Older Sister", "Diana");
         firstmap.put("Brother", "Nate");
