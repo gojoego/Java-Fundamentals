@@ -64,7 +64,7 @@ public class HashMapDocEx2 {
 
 
         // get the first index of the word "LinkedList"
-        int first = words.indexOf("LinkedList");
+        String first = words.indexOf("LinkedList");
         System.out.println("\nThe first index of the word \"LinkedList\" is " + first);
 
 

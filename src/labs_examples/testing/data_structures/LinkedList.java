@@ -52,6 +52,22 @@ public class LinkedList<T> {
 
     public void descendingIterator() {
     }
+
+    public boolean contains(String linkedList) {
+        return true;
+    }
+
+    public String indexOf(String d) {
+        return d;
+
+    }
+
+    public int lastIndexOf(String d) {
+        return 0;
+    }
+
+    public void clear() {
+    }
 }
 
 
