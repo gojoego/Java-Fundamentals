@@ -37,6 +37,17 @@ public class BahasaBasics {
         System.out.println();
         System.out.println(basics);
 
+        System.out.println(basics.size());
+
+        System.out.println(basics.containsKey("Welcome"));
+        System.out.println(basics.containsValue("Turducken"));
+
+        System.out.println(basics.keySet());
+
+        System.out.println(basics.entrySet());
+
+
+
 
     }
 
