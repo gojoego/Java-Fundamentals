@@ -34,11 +34,17 @@ public class HashMapController {
 
         System.out.println("original above");
 
-        family.get("Older Sister");
+        System.out.println();
+
+        System.out.println("My older sister is " + family.get("Older Sister"));
+
 
         family.remove("Sister in Law");
+        System.out.println(family.toString());
 
-        family.contains("Brother");
+        System.out.println();
+        boolean i = family.contains("Brother");
+        System.out.println(i);
 
 
 

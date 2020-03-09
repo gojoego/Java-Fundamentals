@@ -13,6 +13,7 @@ package labs_examples.testing.data_structures;
     // if so check if linked list
 
 
+import java.util.Arrays;
 
 public class CustHashMap<K, V> {
 
@@ -70,10 +71,12 @@ public class CustHashMap<K, V> {
     }
 
     public void remove(K key) {
-        int index = hash(key);
         if (get(key) == null) {
             return;
         }
+
+        int index = hash(key);
+
         HashMapNode<K, V> test = map[index];
 
         if (test.getKey().equals(key) && test.getNext() != null) {
@@ -81,21 +84,49 @@ public class CustHashMap<K, V> {
             return;
         }
         while (test.getNext() != null){
-            if (test.getNext().getNext().getKey() != key){
+            if (test.getNext().getKey() != key){
                 test = test.getNext();
             }
+        }
+        if (test.getNext().getNext() != null){
+            test.getNext() = test.getNext().getNext();
+        }
+        else {
+            test.getNext() = null;
         }
     }
 
     public boolean contains(K key) {
-        int index = hash(key);
-        if (map[index].getKey().equals(key)) {
 
+        // call hash() method at key and set it equal to int index
+        int index = hash(key);
+
+        // if the value at map at index is equal to key, return true
+        if (map[index].getKey().equals(key)) {
             return true;
+        } else if (null != map[index].getNext()) {
+            // the value at map at index is not equal to null
+            // then iterator through the map
+            // while the iterator is not equal to mull
+            // and if the iterator key equals key, return true
+            HashMapNode iterator = map[index].getNext();
+            while (iterator != null){
+                if (iterator.getKey().equals(key)){
+                    return true;
+                } else {
+                    iterator = iterator.getNext();
+                }
+            }
         }
         return false;
     }
 
+    @Override
+    public String toString() {
+        return "CustHashMap{" +
+                "map=" + Arrays.toString(map) +
+                '}';
+    }
 }
 
 class HashMapNode<K, V> {
