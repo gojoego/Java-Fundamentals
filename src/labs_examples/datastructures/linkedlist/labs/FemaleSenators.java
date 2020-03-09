@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
 
-public class Senators {
+public class FemaleSenators {
 
     public static void main(String[] args) {
 
@@ -47,6 +47,37 @@ public class Senators {
 
         System.out.println("last on the list is " + senators.getLast());
 
+        System.out.println(senators.get(6));
+
+        System.out.println(senators.size());
+
+        senators.set(6,"Jacky Rosen");
+
+        System.out.println(senators);
+
+        senators.push("Elizabeth Warren");
+
+        System.out.println(senators);
+
+        senators.pop();
+
+        System.out.println();
+
+        System.out.println(senators);
+
+        senators.remove();
+
+        System.out.println();
+
+        System.out.println(senators);
+
+        System.out.println(senators.contains("Kamala Harris"));
+
+        senators.listIterator(5);
+
+        senators.clear();
+
+        System.out.println(senators);
 
     }
 }
