@@ -1,15 +1,13 @@
 package labs_examples.testing.data_structures;
 
 
+import javax.swing.*;
+
 public class HashMapController {
 
     public static void main(String[] args) {
 
         CustHashMap<String, String> family = new CustHashMap<>();
-        //  HashMap<String, Integer> f = new HashMap<>();
-        //  f.put("p", 1);
-        //  f.containsKey("p");
-        //   f.isEmpty();
 
         family.put("Older Sister", "Diana");
         family.put("Brother", "Nate");
@@ -19,6 +17,7 @@ public class HashMapController {
         family.put("Aunt", "Mae");
         family.put("Grandma", "Miriam");
         family.put("Cousin", "Matt");
+        family.put("Sister in Law","Rebecca");
 
 
         System.out.println(family.get("Older Sister"));
@@ -29,6 +28,19 @@ public class HashMapController {
         System.out.println(family.get("Aunt"));
         System.out.println(family.get("Grandma"));
         System.out.println(family.get("Cousin"));
+        System.out.println(family.get("Sister in Law"));
+
+        System.out.println();
+
+        System.out.println("original above");
+
+        family.get("Older Sister");
+
+        family.remove("Sister in Law");
+
+        family.contains("Brother");
+
+
 
 
 

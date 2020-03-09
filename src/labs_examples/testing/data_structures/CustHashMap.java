@@ -132,4 +132,13 @@ class HashMapNode<K, V> {
     public void setNext(HashMapNode next) {
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        return "HashMapNode{" +
+                "key=" + key +
+                ", value=" + value +
+                ", next=" + next +
+                '}';
+    }
 }
