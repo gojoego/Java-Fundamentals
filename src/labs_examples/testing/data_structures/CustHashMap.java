@@ -145,6 +145,20 @@ public class CustHashMap<K, V> {
 
 
     }
+
+    public void print() {
+        for(int i = 0; i < map.length; i++){
+            if(map[i] == null) {
+                continue;
+            }
+            System.out.println(map[i]);
+            HashMapNode<K, V> iterator = map[i];
+            while(iterator.getNext() != null){
+                System.out.println(iterator.getNext());
+                iterator = iterator.getNext();
+            }
+        }
+    }
 }
 
 

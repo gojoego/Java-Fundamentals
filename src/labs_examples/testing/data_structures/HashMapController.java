@@ -39,7 +39,7 @@ public class HashMapController {
 
         family.remove("Sister in Law");
 
-        family.printList();
+        family.print();
 
 
         System.out.println(family.contains("Sister in Law"));
