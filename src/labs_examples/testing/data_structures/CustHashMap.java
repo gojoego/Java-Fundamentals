@@ -1,5 +1,18 @@
 package labs_examples.testing.data_structures;
 
+// create underlying array
+// hash method to get index
+// put (key, value)
+// get (key)
+// remove
+// remove: public void remove (K key) {}
+// get hash
+// check if that index is mull
+// return if
+// check if first node is the one to be removed
+    // if so check if linked list
+
+
 
 public class CustHashMap<K, V> {
 
@@ -63,11 +76,12 @@ public class CustHashMap<K, V> {
         }
         HashMapNode<K, V> test = map[index];
 
-        if (test.getKey().equals(key)) {
+        if (test.getKey().equals(key) && test.getNext() != null) {
             map[index] = null;
+            return;
         }
         while (test.getNext() != null){
-            if (test.getNext().getKey() != key){
+            if (test.getNext().getNext().getKey() != key){
                 test = test.getNext();
             }
         }

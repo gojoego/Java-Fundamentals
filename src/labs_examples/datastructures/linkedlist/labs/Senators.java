@@ -17,8 +17,7 @@ public class Senators {
         senators.add("Kirsten Gillibrand");
         senators.add("Amy Klobuchar");
 
-        System.out.println(senators);
-
+        System.out.println("original: " + senators);
 
         Collection<String> others = new ArrayList<>();
         others.add("Patty Murray");
@@ -27,6 +26,16 @@ public class Senators {
         others.add("Jeanne Shaheen");
         others.add("Mazie Hirono");
         others.add("Tammy Baldwin");
+
+        System.out.println("to add " + others);
+
+        senators.addAll(others);
+
+        System.out.println(senators);
+
+        senators.addFirst("Catherine Cortez Mosto");
+
+        System.out.println(senators);
 
 
     }

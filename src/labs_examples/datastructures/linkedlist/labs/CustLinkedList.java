@@ -91,7 +91,36 @@ public class CustLinkedList<T> {
         }
     }
 
+    // public void remove (K key)
+    // 1. call the hash() to get index for "key"
+    // 2. check to see if array at index is null
+        // return if so
+    // 3. if array at index is not a linkedlist (aka ".next" is null)
+        //
+        // and array at index .getkey is equal to key
+        // set array at index to null
+        // return
+    // 4. else create an iterator containing the node object at array[index]
+    // 5. while iterator.next is not null and iterator.next.key != key(to remove)
+        // iterate (iterator = iterator.next)
+    // 6. after while loop completes we're either at the
+        // end of the list if last node is one to delete
+        // set next to null
+        // if last node is not the same key, we didn't find
+        // it in the list, return
+    // 7. if found key in next and next.next does not equal
+    // null then set node.next = node.next.next
+
+
+
+    // hash (K key)
+    // int hash = key.hashcode();
+    // int index = hash% array.length;
+    // return index;
+
+
     public void remove(int index) {
+
         if (index == 0) {
             head = head.next;
         } else if (index < size()) {
