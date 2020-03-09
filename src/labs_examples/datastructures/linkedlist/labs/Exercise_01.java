@@ -3,7 +3,8 @@ package labs_examples.datastructures.linkedlist.labs;
 /**
  *      LinkedLists - Exercise_01
  *
- *      Demonstrate your mastery of Java's built-in LinkedList class by demonstrating the following:
+ *      Demonstrate your mastery of Java's built-in
+ *      LinkedList class by demonstrating the following:
  *
  *      1) create a LinkedList (from Java's libraries)
  *      2) add()

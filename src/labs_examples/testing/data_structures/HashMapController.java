@@ -1,35 +1,35 @@
 package labs_examples.testing.data_structures;
 
 
-import java.util.HashMap;
-
 public class HashMapController {
 
     public static void main(String[] args) {
 
-        CustHashMap<String, String> firstmap = new CustHashMap<>();
-      //  HashMap<String, Integer> f = new HashMap<>();
-      //  f.put("p", 1);
-      //  f.containsKey("p");
-     //   f.isEmpty();
+        CustHashMap<String, String> family = new CustHashMap<>();
+        //  HashMap<String, Integer> f = new HashMap<>();
+        //  f.put("p", 1);
+        //  f.containsKey("p");
+        //   f.isEmpty();
 
-        firstmap.put("Older Sister", "Diana");
-        firstmap.put("Brother", "Nate");
-        firstmap.put("Oldest Sister", "Gia");
+        family.put("Older Sister", "Diana");
+        family.put("Brother", "Nate");
+        family.put("Oldest Sister", "Gia");
+        family.put("Mother", "Ann");
+        family.put("Uncle", "Val");
+        family.put("Aunt", "Mae");
+        family.put("Grandma", "Miriam");
+        family.put("Cousin", "Matt");
 
-        System.out.println("before");
 
-        System.out.println(firstmap.get("Older Sister"));
-        System.out.println(firstmap.get("Brother"));
-        System.out.println(firstmap.get("Oldest Sister"));
+        System.out.println(family.get("Older Sister"));
+        System.out.println(family.get("Brother"));
+        System.out.println(family.get("Oldest Sister"));
+        System.out.println(family.get("Mother"));
+        System.out.println(family.get("Uncle"));
+        System.out.println(family.get("Aunt"));
+        System.out.println(family.get("Grandma"));
+        System.out.println(family.get("Cousin"));
 
-        firstmap.remove("Brother");
-
-        System.out.println("after");
-
-        System.out.println(firstmap.get("Older Sister"));
-        System.out.println(firstmap.get("Brother"));
-        System.out.println(firstmap.get("Oldest Sister"));
 
 
     }
