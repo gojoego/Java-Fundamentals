@@ -1,8 +1,11 @@
 package labs_examples.datastructures.hashmap.labs;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.function.BiConsumer;
 
 public class BahasaBasics {
 
@@ -46,9 +49,38 @@ public class BahasaBasics {
 
         System.out.println(basics.entrySet());
 
+        basics.putIfAbsent("Sorry","Maaf");
+
+        System.out.println(basics);
+        System.out.println(basics.size());
+
+        basics.remove("Good afternoon 2","Selamat sore");
+
+        System.out.println(basics);
+        System.out.println(basics.size());
+
+        basics.replace("Good afternoon 1", "Selamat siang","Selamat sore");
+
+        System.out.println(basics);
+        System.out.println(basics.size());
+
+        basics.clear();
+        System.out.println(basics);
+        System.out.println(basics.size());
+
+        basics.forEach(print());
 
 
 
+
+
+
+
+    }
+
+    private static BiConsumer<? super String,? super String> print() {
+
+        return null;
     }
 
 }
