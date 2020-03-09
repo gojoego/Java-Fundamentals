@@ -37,6 +37,16 @@ public class Senators {
 
         System.out.println(senators);
 
+        senators.addLast("Kyrsten Simena");
+
+        System.out.println(senators);
+
+        System.out.println();
+
+        System.out.println("first on the list is " + senators.getFirst());
+
+        System.out.println("last on the list is " + senators.getLast());
+
 
     }
 }

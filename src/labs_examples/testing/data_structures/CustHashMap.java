@@ -10,14 +10,13 @@ package labs_examples.testing.data_structures;
 // check if that index is mull
 // return if
 // check if first node is the one to be removed
-    // if so check if linked list
+// if so check if linked list
 
-
-import java.util.Arrays;
 
 public class CustHashMap<K, V> {
 
     HashMapNode[] map = new HashMapNode[10];
+
 
     public int hash(K key) {
         int hashcode = key.hashCode();
@@ -77,22 +76,25 @@ public class CustHashMap<K, V> {
 
         int index = hash(key);
 
-        HashMapNode<K, V> test = map[index];
+        HashMapNode<K, V> entry = map[index];
 
-        if (test.getKey().equals(key) && test.getNext() != null) {
+        if (entry.getKey().equals(key) && entry.getNext() == null) {
             map[index] = null;
             return;
         }
-        while (test.getNext() != null){
-            if (test.getNext().getKey() != key){
-                test = test.getNext();
+        while (entry.getNext() != null && !entry.getNext().getKey().equals(key)) {
+            entry = entry.getNext();
+        }
+
+        if (entry.getNext() == null) {
+            return;
+
+        } else if (entry.getNext().getKey().equals(key)) {
+            if (null != entry.getNext().getNext()) {
+                entry.setNext(entry.getNext().getNext());
+            } else {
+                entry.setNext(null);
             }
-        }
-        if (test.getNext().getNext() != null){
-            test.getNext() = test.getNext().getNext();
-        }
-        else {
-            test.getNext() = null;
         }
     }
 
@@ -102,32 +104,49 @@ public class CustHashMap<K, V> {
         int index = hash(key);
 
         // if the value at map at index is equal to key, return true
-        if (map[index].getKey().equals(key)) {
-            return true;
-        } else if (null != map[index].getNext()) {
+        if (map[index] == null) {
+            return false;
+        }
+        HashMapNode<K, V> entry = map[index];
+
+        while (null != entry) {
+            if (entry.getKey().equals(key)) {
+                return true;
+            }
+            entry = entry.getNext();
+        }
+
+        /*
+        else if (null != map[index].getNext()) {
             // the value at map at index is not equal to null
             // then iterator through the map
             // while the iterator is not equal to mull
             // and if the iterator key equals key, return true
             HashMapNode iterator = map[index].getNext();
-            while (iterator != null){
-                if (iterator.getKey().equals(key)){
+            while (iterator != null) {
+                if (iterator.getKey().equals(key)) {
                     return true;
                 } else {
                     iterator = iterator.getNext();
                 }
             }
-        }
+
+         */
+
         return false;
     }
 
-    @Override
-    public String toString() {
-        return "CustHashMap{" +
-                "map=" + Arrays.toString(map) +
-                '}';
+
+    public void printList(){
+
+        for (HashMapNode var : map){
+            System.out.println(var);
+        }
+
+
     }
 }
+
 
 class HashMapNode<K, V> {
 
@@ -172,4 +191,6 @@ class HashMapNode<K, V> {
                 ", next=" + next +
                 '}';
     }
+
+
 }
