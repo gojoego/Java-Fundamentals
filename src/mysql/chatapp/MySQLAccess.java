@@ -26,6 +26,7 @@ public class MySQLAccess {
             // Setup the connection with the DB
             connection = DriverManager.getConnection("jdbc:mysql://localhost/chat_app?" +
                     "user=&password=&useSSL=false&allowPublicKeyRetrieval=true");
+            // when pushing this file to github, remove username and password
             // Statements allow to issue SQL queries to the database
             statement = connection.createStatement();
             // Result set get the result of the SQL query
