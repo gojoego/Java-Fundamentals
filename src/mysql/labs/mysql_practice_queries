@@ -1,0 +1,93 @@
+1. How many films have an actor with the last name of Streep? What are their titles?
+
+select count(i.film_id), f.title from inventory i
+join film_actor fa
+on i.film_id = fa.film_id
+join actor a
+on fa.actor_id = a.actor_id
+join film f
+on f.film_id = fa.film_id
+where a.last_name = "Streep"
+group by i.film_id
+
+2. How many different horror film titles are there?
+
+select count(f.title) from film f
+join film_category fc
+on fc.film_id  = f.film_id
+join category c
+on c.category_id = fc.category_id
+where name = "Horror"
+
+3. What are the titles of all the foreign language films?
+o
+select f.title from film f
+join film_category fc
+on fc.film_id  = f.film_id
+join category c
+on c.category_id = fc.category_id
+where name = "Foreign"
+
+4. What are all the film titles with actor who has the first name Meryl?
+
+select f.title from film f
+join film_actor fa
+on f.film_id = fa.film_id
+join actor a
+on fa.actor_id = a.actor_id
+where a.first_name = "Meryl"
+order by f.title
+
+5. What are all the PG-13 rated Action films?
+
+select f.title from film f
+join film_category fc
+on fc.film_id  = f.film_id
+join category c
+on c.category_id = fc.category_id
+where name = "Action" and f.rating = "PG-13"
+
+6. How many rated "R" dramas are there?
+
+select count(f.title) from film f
+join film_category fc
+on fc.film_id  = f.film_id
+join category c
+on c.category_id = fc.category_id
+where name = "Drama" and f.rating = "R"
+
+7. Who has done the most renting and how many films has she rented?
+
+select count(p.rental_id) as total_rentals, c.first_name, c.last_name
+from payment p
+join customer c
+on p.customer_id = c.customer_id
+group by c.customer_id
+order by total_rentals desc
+limit 1
+
+8. How much money has been spent on replacement costs?
+
+select sum(f.replacement_cost) from film f
+
+9. What is the length of the longest film?
+
+select f.length from film f
+order by f.length desc
+limit 1
+
+10. How many NC-17 films are there?
+
+select count(rating) from film
+where rating = "NC-17"
+
+Class: Who are the 10 best customers and how much did they spend?
+
+select sum(p.amount) as total_rentals, c.first_name, c.last_name
+from payment p
+join customer c
+on p.customer_id = c.customer_id
+group by c.customer_id
+order by total_rentals desc
+limit 10
+
