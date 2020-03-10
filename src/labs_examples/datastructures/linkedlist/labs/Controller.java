@@ -4,5 +4,9 @@ public class Controller {
 
     public static void main(String[] args) {
 
+        CustLinkedList<String> foundingFathers = new CustLinkedList<>();
+
+        foundingFathers.add("Alexander Hamilton");
+
     }
 }
