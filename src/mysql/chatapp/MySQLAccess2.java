@@ -9,7 +9,7 @@ import java.sql.*;
         import java.util.Arrays;
 
 
-public class copy {
+public class MySQLAccess2 {
     private Connection connection = null;
     private Statement statement = null;
     private ResultSet resultSet = null;
