@@ -5,7 +5,9 @@
  *      Using MySQLWorkbench,
  *
  *      1.) If you haven't already, create the college database as instructed here:
- *              https://platform.codingnomads.co/learn/mod/page/view.php?id=2133
+
+ *          https://platform.codingnomads.co/learn/mod/page/view.php?id=2133
+
  *      2.) Create a new table "students" with the following fields:
  *          a. id (auto increment)
  *          b. first_name
