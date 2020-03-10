@@ -7,6 +7,8 @@ package labs_examples.datastructures.hashmap.labs;
  *
  *  Using a HashMap demonstrate the use of the following methods:
  *
+ *  Completed: see BahasaBasics
+ *
  *  put()
  *  get()
  *  putAll()
