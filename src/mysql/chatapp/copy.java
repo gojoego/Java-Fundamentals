@@ -30,7 +30,7 @@ public class copy {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // Setup the connection with the DB
             connection = DriverManager.getConnection("jdbc:mysql://localhost/chat_app?" +
-                    "user=root&password=Eliz@bethW@rren!&useSSL=false&allowPublicKeyRetrieval=true");
+                    "user=&useSSL=false&allowPublicKeyRetrieval=true");
             // Statements allow to issue SQL queries to the database
             statement = connection.createStatement();
             // Result set get the result of the SQL query

@@ -13,13 +13,19 @@ import java.util.List;
  *         (as a double) of whatever two numbers were passed in
  *         regardless of their type.
  *
+<<<<<<< HEAD
  *      2) Write a generic method to count the number of elements in a
  *         collection of Strings that are palindromes
  *
+=======
+ *      2) Write a generic method to count the number of elements in a "Collection" of Strings that are palindromes
+
+>>>>>>> 45e04b7d3040d9dff83b0363a9adf3ba60759515
  *      3) Write a generic method to exchange the positions of two different elements in an array.
  *
  *      4) Write a generic method to find the largest element within the range (begin, end) of a list.
  *
+<<<<<<< HEAD
  *
  */
 
@@ -82,3 +88,4 @@ class numberFour {
         return max;
     }
 }
+
