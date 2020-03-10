@@ -7,6 +7,10 @@ public class Controller {
         CustLinkedList<String> foundingFathers = new CustLinkedList<>();
 
         foundingFathers.add("Alexander Hamilton");
+        foundingFathers.add("John Jay");
+        foundingFathers.add("Benjamin Franklin");
+        
+
 
     }
 }
