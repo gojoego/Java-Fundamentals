@@ -24,20 +24,20 @@ public class MySQLAccess {
             // This will load the MySQL driver, each DB has its own driver
             Class.forName("com.mysql.cj.jdbc.Driver");
             // Setup the connection with the DB
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/chat_app?" +
-                    "user=&password=&useSSL=false&allowPublicKeyRetrieval=true");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/ChatApp?" +
+                            "user=&password=&useSSL=false&allowPublicKeyRetrieval=true");
             // when pushing this file to github, remove username and password
             // Statements allow to issue SQL queries to the database
             statement = connection.createStatement();
             // Result set get the result of the SQL query
-            resultSet = statement.executeQuery("select * from chat_app.Messages;");
+            resultSet = statement.executeQuery("select * from ChatApp.Messages;");
             //writeResultSet(resultSet);
             ArrayList<Message> messages = mapResultSetToObjects(resultSet);
             for (Message m : messages){
                 System.out.println(m.toString());
             }
 
-            resultSet = statement.executeQuery("select * from chat_app.User;");
+            resultSet = statement.executeQuery("select * from ChatApp.User;");
             //writeResultSet(resultSet);
             ArrayList<Users> users = mapUsersResultSetToObjects(resultSet);
             for (Users u : users){
@@ -72,6 +72,7 @@ public class MySQLAccess {
 
     private ArrayList<Users> mapUsersResultSetToObjects(ResultSet resultSet) throws SQLException {
 
+        // what happens when we use @Mapper and @Select tag in mybatis
         ArrayList<Users> userList = new ArrayList();
         while (resultSet.next()) {
 
